@@ -5,34 +5,34 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "144.172.65.72",
-      "server_port": 8443,
-      "uuid": "8afeb33c-b686-43e9-a629-0d98f991ec28",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - NJ",
+      "server": "51.161.204.244",
+      "server_port": 443,
+      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.tradingview.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg",
-          "short_id": ""
+          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
+          "short_id": "0ad08b47f498efd2"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-      "server": "vpn-au-001.fastervpn.world",
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - NJ",
+      "server": "au.tronsg.com",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "password": "Trojan@82164024",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "au.tronsg.com",
         "insecure": true
       }
     },
@@ -41,16 +41,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - NJ",
+        "🇦🇺 澳大利亚 (Australia) 02 - NJ"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - NJ",
+        "🇦🇺 澳大利亚 (Australia) 02 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,40 +4,54 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 119.46.51.45
-  port: 37515
-  udp: true
-  type: vmess
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: 154.21.203.106
-  port: 21033
+- name: 🇹🇭 泰国 (Thailand) 01 - NJ
+  server: 38.60.254.50
+  port: 22222
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: th001.zestapp778.com
+  skip-cert-verify: false
+- name: 🇹🇭 泰国 (Thailand) 02 - NJ
+  server: 45.154.26.63
+  port: 443
+  udp: true
+  type: vless
+  uuid: ff85e702-b605-4109-884d-2c1f065d0954
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
-  servername: www.kaidee.com
-  client-fingerprint: firefox
+    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
+    short-id: 3c032a7e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇭 泰国 (Thailand) 03 - NJ
+  server: 103.86.49.57
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 01 - NJ
+  - 🇹🇭 泰国 (Thailand) 02 - NJ
+  - 🇹🇭 泰国 (Thailand) 03 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 01 - NJ
+  - 🇹🇭 泰国 (Thailand) 02 - NJ
+  - 🇹🇭 泰国 (Thailand) 03 - NJ
 rules:
 - MATCH,PROXIES

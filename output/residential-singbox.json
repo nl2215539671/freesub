@@ -5,14 +5,29 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
-      "server": "googol.wookshop.ir",
-      "server_port": 17915,
-      "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - NJ",
+      "server": "112.169.175.199",
+      "server_port": 31157,
+      "uuid": "bd2fb303-b4c7-49af-a8e3-5c6f11b005dd"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - NJ",
+      "server": "218.237.185.234",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - NJ",
+      "server": "kw119.zxmm.eu.org",
+      "server_port": 20031,
+      "password": "00a72bf349e6479b",
       "tls": {
         "enabled": true,
-        "server_name": "googol.wookshop.ir",
-        "insecure": false
+        "server_name": "kw119.zxmm.eu.org",
+        "insecure": true
       }
     },
     {
@@ -20,14 +35,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - NJ",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - NJ",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - NJ"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - NJ",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - NJ",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

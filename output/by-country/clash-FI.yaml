@@ -4,47 +4,59 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 185.103.110.68
-  port: 18283
+- name: 🇫🇮 芬兰 (Finland) 01 - NJ
+  server: 45-149-147-213.sslip.io
+  port: 4444
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 185.239.141.248
-  port: 8388
+  type: trojan
+  password: 9b347a9b-d7a6-4b51-9890-eff62b832834
+  sni: 45-149-147-213.sslip.io
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: kobedin-server1-trojan
+- name: 🇫🇮 芬兰 (Finland) 02 - NJ
+  server: 45.149.147.213
+  port: 4443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: j_Z9yWqItCz_9yhD5YVY4w
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 31.77.151.175
+  type: vless
+  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
+  tls: true
+  servername: 45-149-147-213.sslip.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: kobedin-server1-vless
+- name: 🇫🇮 芬兰 (Finland) 03 - NJ
+  server: 2.29.101.158
   port: 443
   udp: true
   type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  flow: xtls-rprx-vision
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
   tls: true
   reality-opts:
-    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
-    short-id: bdf5852d1423e694
-  servername: fi.pythonsetupbib.online
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 87.58.149.117
-  port: 443
+    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
+    short-id: b3c9d0c6bdd114a6
+  servername: 36a466g.fi1.h1clayd.click
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 0adb9638509b
+- name: 🇫🇮 芬兰 (Finland) 04 - NJ
+  server: 2.27.13.152
+  port: 8443
   udp: true
   type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
-    short-id: ff0ddf949624ef2a
-  servername: freefl.aiage.work
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+    public-key: 14YyFG_j2yPEUu-gO_G9GqCqRiZ0DIUgzReV9CZvOAk
+    short-id: 0f47ff9aa15e3e30
+  servername: www.nokia.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 - NJ
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -56,105 +68,159 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 185.103.110.66
-  port: 18280
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  server: fi-p1.h1cloud.net
-  port: 25481
-  udp: true
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  tls: true
-  reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  servername: www.bing.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8cb5baa18cd7
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  server: finaluty.loknietotop.digital
+- name: 🇫🇮 芬兰 (Finland) 06 - NJ
+  server: 77.42.12.225
   port: 443
   udp: true
   type: vless
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
-  flow: xtls-rprx-vision
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   tls: true
   reality-opts:
-    public-key: III2StgFziJtisbaKDYlEF2qYwBHJZnzZH5DHdwuFQ8
-    short-id: d110331f200987ae
-  servername: finaluty.loknietotop.digital
+    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
+    short-id: 09d0a94a1c6fc9d5
+  servername: 8fc752g.fi3.h1clayd.click
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
-  server: 65.108.3.59
+  network: grpc
+  grpc-opts:
+    grpc-service-name: f345a414c040
+- name: 🇫🇮 芬兰 (Finland) 07 - NJ
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 08 - NJ
+  server: 177.3.214.156
   port: 443
   udp: true
   type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
+    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
+  servername: finlandlanzarotte.live
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 11 - xiaohe
-  server: 109.172.54.135
-  port: 8444
+- name: 🇫🇮 芬兰 (Finland) 09 - NJ
+  server: 31.77.199.147
+  port: 4443
   udp: true
   type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
+- name: 🇫🇮 芬兰 (Finland) 10 - NJ
+  server: 94.228.167.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dCaQHVtwEPBeiH3ivVU9ycGJZ8uCO2JaIVjYBnfaTWY
+    short-id: c13c9bd7bd45847d
+  servername: washingphonicseatable.solsticedigest.me
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 11 - NJ
+  server: 31.76.89.226
+  port: 443
+  udp: true
+  type: vless
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  servername: ai.eosshop.net
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 12 - NJ
+  server: 65.109.212.193
+  port: 465
+  udp: true
+  type: vless
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  tls: true
+  servername: hw3.divarkhaghazi.com.
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 13 - NJ
+  server: fin2.pad-sservice.lat
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: fin2.pad-sservice.lat
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /fin2-1
+    headers:
+      Host: fin2.pad-service.com
+- name: 🇫🇮 芬兰 (Finland) 14 - NJ
+  server: 94.156.181.168
+  port: 443
+  udp: true
+  type: vless
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  servername: math.videoticher.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 11 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 01 - NJ
+  - 🇫🇮 芬兰 (Finland) 02 - NJ
+  - 🇫🇮 芬兰 (Finland) 03 - NJ
+  - 🇫🇮 芬兰 (Finland) 04 - NJ
+  - 🇫🇮 芬兰 (Finland) 05 - NJ
+  - 🇫🇮 芬兰 (Finland) 06 - NJ
+  - 🇫🇮 芬兰 (Finland) 07 - NJ
+  - 🇫🇮 芬兰 (Finland) 08 - NJ
+  - 🇫🇮 芬兰 (Finland) 09 - NJ
+  - 🇫🇮 芬兰 (Finland) 10 - NJ
+  - 🇫🇮 芬兰 (Finland) 11 - NJ
+  - 🇫🇮 芬兰 (Finland) 12 - NJ
+  - 🇫🇮 芬兰 (Finland) 13 - NJ
+  - 🇫🇮 芬兰 (Finland) 14 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 11 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 01 - NJ
+  - 🇫🇮 芬兰 (Finland) 02 - NJ
+  - 🇫🇮 芬兰 (Finland) 03 - NJ
+  - 🇫🇮 芬兰 (Finland) 04 - NJ
+  - 🇫🇮 芬兰 (Finland) 05 - NJ
+  - 🇫🇮 芬兰 (Finland) 06 - NJ
+  - 🇫🇮 芬兰 (Finland) 07 - NJ
+  - 🇫🇮 芬兰 (Finland) 08 - NJ
+  - 🇫🇮 芬兰 (Finland) 09 - NJ
+  - 🇫🇮 芬兰 (Finland) 10 - NJ
+  - 🇫🇮 芬兰 (Finland) 11 - NJ
+  - 🇫🇮 芬兰 (Finland) 12 - NJ
+  - 🇫🇮 芬兰 (Finland) 13 - NJ
+  - 🇫🇮 芬兰 (Finland) 14 - NJ
 rules:
 - MATCH,PROXIES
