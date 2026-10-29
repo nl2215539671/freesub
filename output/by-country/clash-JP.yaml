@@ -5,41 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - NJ
-  server: 149.22.87.240
-  port: 443
+  server: 84.247.155.196
+  port: 80
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 02 - NJ
-  server: 149.22.87.241
+  server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 03 - NJ
-  server: 45.32.52.173
-  port: 8886
+  server: 149.22.87.241
+  port: 443
   udp: true
-  type: trojan
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 45.32.52.173
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 04 - NJ
-  server: 103.75.118.228
-  port: 11452
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 05 - NJ
   server: 8.209.247.109
   port: 443
   udp: true
@@ -47,7 +33,22 @@ proxies:
   password: usqmqUKJFIlCmvkCNSY64L3k
   sni: 8.209.247.109
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 05 - NJ
+  server: 149.22.87.240
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 06 - NJ
+  server: 43.167.186.78
+  port: 8443
+  udp: true
+  type: trojan
+  password: 9646699a-18b0-4ebc-9f53-453cc1c8e637
+  sni: 43.167.186.78
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 07 - NJ
   server: ga1data.xyy123.bid
   port: 443
   udp: true
@@ -60,7 +61,22 @@ proxies:
     short-id: 00b0389a
   servername: www.amzn.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 07 - NJ
+- name: 🇯🇵 日本 (Japan) 08 - NJ
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 09 - NJ
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 10 - NJ
   server: 138.3.208.26
   port: 50160
   udp: true
@@ -68,22 +84,17 @@ proxies:
   password: 184cdec28da5a09450803c8debcd2cc9
   sni: '1'
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - NJ
-  server: 45.202.255.92
-  port: 9443
+- name: 🇯🇵 日本 (Japan) 11 - NJ
+  server: 45.32.52.173
+  port: 8886
   udp: true
-  type: vless
-  uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 09 - NJ
-  server: 3.114.220.22
-  port: 10583
+  type: trojan
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  sni: 45.32.52.173
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 12 - NJ
+  server: 103.75.118.228
+  port: 12683
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -93,8 +104,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 10 - NJ
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 13 - NJ
   server: freedom.chenlan.top
   port: 12765
   udp: true
@@ -102,14 +113,7 @@ proxies:
   password: STYyftThFn
   sni: freedom.chenlan.top
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 11 - NJ
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 12 - NJ
+- name: 🇯🇵 日本 (Japan) 14 - NJ
   server: vp3.yysyy.online
   port: 443
   udp: true
@@ -117,7 +121,20 @@ proxies:
   password: 96ab5cd282733fd4c312a61f972f330a
   sni: vp3.yysyy.online
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 13 - NJ
+- name: 🇯🇵 日本 (Japan) 15 - NJ
+  server: 3.114.220.22
+  port: 19645
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 16 - NJ
   server: 45.76.98.127
   port: 443
   udp: true
@@ -132,11 +149,31 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
+- name: 🇯🇵 日本 (Japan) 17 - NJ
+  server: rb.mangshe.xyz
+  port: 2060
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: rb.mangshe.xyz
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 18 - NJ
+  server: 152.69.200.216
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
     headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 14 - NJ
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 19 - NJ
   server: 3.114.220.22
-  port: 19645
+  port: 10583
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -147,14 +184,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 15 - NJ
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 16 - NJ
+- name: 🇯🇵 日本 (Japan) 20 - NJ
   server: 3.114.220.22
   port: 18007
   udp: true
@@ -166,17 +196,9 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 17 - NJ
-  server: rb.mangshe.xyz
-  port: 2060
-  udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: rb.mangshe.xyz
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 18 - NJ
-  server: 104.21.50.177
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 21 - NJ
+  server: 172.67.164.184
   port: 2083
   udp: true
   type: vmess
@@ -191,28 +213,19 @@ proxies:
     path: /or3
     headers:
       Host: or3.sfacg.uk
-- name: 🇯🇵 日本 (Japan) 19 - NJ
-  server: 104.17.169.13
-  port: 443
+- name: 🇯🇵 日本 (Japan) 22 - NJ
+  server: 168.138.43.75
+  port: 80
   udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /cctv13.m3u8
     headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 20 - NJ
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
+      Host: none
 proxy-groups:
 - name: PROXIES
   type: select
@@ -238,6 +251,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 18 - NJ
   - 🇯🇵 日本 (Japan) 19 - NJ
   - 🇯🇵 日本 (Japan) 20 - NJ
+  - 🇯🇵 日本 (Japan) 21 - NJ
+  - 🇯🇵 日本 (Japan) 22 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -263,5 +278,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 18 - NJ
   - 🇯🇵 日本 (Japan) 19 - NJ
   - 🇯🇵 日本 (Japan) 20 - NJ
+  - 🇯🇵 日本 (Japan) 21 - NJ
+  - 🇯🇵 日本 (Japan) 22 - NJ
 rules:
 - MATCH,PROXIES

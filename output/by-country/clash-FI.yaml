@@ -5,6 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - NJ
+  server: 78.17.27.137
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
+  tls: true
+  reality-opts:
+    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
+    short-id: a05ccbf2edb5ebd1
+  servername: www.aalto.fi
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 02 - NJ
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 03 - NJ
   server: 65.109.210.221
   port: 465
   udp: true
@@ -19,7 +42,16 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 02 - NJ
+- name: 🇫🇮 芬兰 (Finland) 04 - NJ
+  server: cd0.bmi.ir.kolman.com.de
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 2da85937-93d9-4509-8491-63b1921cf447
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
+- name: 🇫🇮 芬兰 (Finland) 05 - NJ
   server: 65.109.211.81
   port: 465
   udp: true
@@ -34,28 +66,33 @@ proxies:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 03 - NJ
-  server: 78.17.27.137
+- name: 🇫🇮 芬兰 (Finland) 06 - NJ
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - NJ
+  server: 6.bmi.ir.asopardaz.ir
   port: 8443
   udp: true
   type: vless
-  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
+  uuid: 2da85937-93d9-4509-8491-63b1921cf447
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
-    short-id: a05ccbf2edb5ebd1
-  servername: www.aalto.fi
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - NJ
-  server: mail.loyalsmile.net
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 66315d7f-ebf4-43f6-a475-c578c382409f
-  network: ws
-  ws-opts:
-    path: /wp-content3
-- name: 🇫🇮 芬兰 (Finland) 05 - NJ
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  servername: hostgator.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - NJ
   server: 77.42.12.225
   port: 443
   udp: true
@@ -80,6 +117,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - NJ
   - 🇫🇮 芬兰 (Finland) 04 - NJ
   - 🇫🇮 芬兰 (Finland) 05 - NJ
+  - 🇫🇮 芬兰 (Finland) 06 - NJ
+  - 🇫🇮 芬兰 (Finland) 07 - NJ
+  - 🇫🇮 芬兰 (Finland) 08 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,5 +130,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - NJ
   - 🇫🇮 芬兰 (Finland) 04 - NJ
   - 🇫🇮 芬兰 (Finland) 05 - NJ
+  - 🇫🇮 芬兰 (Finland) 06 - NJ
+  - 🇫🇮 芬兰 (Finland) 07 - NJ
+  - 🇫🇮 芬兰 (Finland) 08 - NJ
 rules:
 - MATCH,PROXIES

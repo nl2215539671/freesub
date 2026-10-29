@@ -5,81 +5,78 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - NJ
-  server: 202.146.222.29
-  port: 443
+  server: 152.32.254.68
+  port: 5010
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: www.bing.com
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: 127.0.0.1
   skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - NJ
+  server: 165.154.63.139
+  port: 443
+  udp: true
+  type: vless
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
+    short-id: ca4aedd4
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - NJ
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  sni: 202.146.222.89
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - NJ
-  server: 156.224.79.61
-  port: 9443
-  udp: true
-  type: vless
-  uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - NJ
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - NJ
-  server: 103.149.182.79
-  port: 8388
+  server: 202.146.222.29
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: google.com
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - NJ
-  server: 47.243.65.243
-  port: 443
+  server: 38.22.88.248
+  port: 27509
   udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
+  flow: xtls-rprx-vision
   tls: true
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+  reality-opts:
+    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
+    short-id: 6ba85179e30d4fc2
+  servername: www.suffolk.edu
+  client-fingerprint: random
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - NJ
-  server: 8.217.13.103
-  port: 443
+  server: 213.152.180.104
+  port: 2091
   udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 847a6dbf-c3b7-40c1-841c-2047c6418842
+  flow: xtls-rprx-vision
   tls: true
-  servername: qtkdr8jxe3wefxjm.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: qtkdr8jxe3wefxjm.v.3dns.vip
+  reality-opts:
+    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
+    short-id: 08a4b1f473932632
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - NJ
   server: 103.238.227.211
   port: 21004
@@ -105,19 +102,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - NJ
-  server: 213.152.180.104
-  port: 2091
-  udp: true
-  type: vless
-  uuid: 847a6dbf-c3b7-40c1-841c-2047c6418842
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-    short-id: 08a4b1f473932632
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - NJ
   server: 526.150333.xyz
   port: 21002
   udp: true
@@ -129,39 +113,16 @@ proxies:
     short-id: f0e6a8bb98db3efd
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - NJ
-  server: chatgpt.com
-  port: 443
-  udp: true
-  type: trojan
-  password: e57m7a2ayx98v1h6
-  sni: wenoos.pecasoou.ir
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@SGV2RAY---@SGV2RAY/---@SGV2RAY---@SGV2RAY/---@SGV2RAY---@SGV2RAY/--@SGV2RAY---@SGV2RAY/---@SGV2RAY---@SGV2RAY/---@SGV2RAY---@SGV2RAY
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - NJ
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - NJ
-  server: 103.238.227.211
-  port: 21001
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - NJ
+  server: 152.175.6.229
+  port: 31884
   udp: true
   type: vless
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: b6dfd5c750351c57
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: hk010.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -178,9 +139,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - NJ
   - 🇭🇰 中国香港 (Hong Kong) 10 - NJ
   - 🇭🇰 中国香港 (Hong Kong) 11 - NJ
-  - 🇭🇰 中国香港 (Hong Kong) 12 - NJ
-  - 🇭🇰 中国香港 (Hong Kong) 13 - NJ
-  - 🇭🇰 中国香港 (Hong Kong) 14 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -197,8 +155,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - NJ
   - 🇭🇰 中国香港 (Hong Kong) 10 - NJ
   - 🇭🇰 中国香港 (Hong Kong) 11 - NJ
-  - 🇭🇰 中国香港 (Hong Kong) 12 - NJ
-  - 🇭🇰 中国香港 (Hong Kong) 13 - NJ
-  - 🇭🇰 中国香港 (Hong Kong) 14 - NJ
 rules:
 - MATCH,PROXIES

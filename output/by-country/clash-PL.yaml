@@ -5,18 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - NJ
+  server: 217.30.10.44
+  port: 9063
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 02 - NJ
   server: 168.222.43.53
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 02 - NJ
+- name: 🇵🇱 波兰 (Poland) 03 - NJ
   server: 155.117.5.208
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 03 - NJ
+- name: 🇵🇱 波兰 (Poland) 04 - NJ
   server: 70.34.252.255
   port: 443
   udp: true
@@ -24,32 +31,35 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - NJ
-  server: 77.232.135.141
-  port: 8445
-  udp: true
-  type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  tls: true
-  servername: ru1.radiolumens.uk
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
 - name: 🇵🇱 波兰 (Poland) 05 - NJ
-  server: 150.251.113.34
-  port: 443
+  server: pol.rvpn.app
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 8z2OB_gvFvpKgjFi8s9Cvw
+- name: 🇵🇱 波兰 (Poland) 06 - NJ
+  server: 2.26.6.1
+  port: 2087
   udp: true
   type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: ''
+  servername: 2.26.6.1
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 07 - NJ
+  server: 54.37.131.126
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +70,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - NJ
   - 🇵🇱 波兰 (Poland) 04 - NJ
   - 🇵🇱 波兰 (Poland) 05 - NJ
+  - 🇵🇱 波兰 (Poland) 06 - NJ
+  - 🇵🇱 波兰 (Poland) 07 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,5 +82,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - NJ
   - 🇵🇱 波兰 (Poland) 04 - NJ
   - 🇵🇱 波兰 (Poland) 05 - NJ
+  - 🇵🇱 波兰 (Poland) 06 - NJ
+  - 🇵🇱 波兰 (Poland) 07 - NJ
 rules:
 - MATCH,PROXIES
