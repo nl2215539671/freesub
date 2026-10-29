@@ -18,18 +18,43 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 02 - NJ
-  server: 193.124.17.190
+  server: 212.102.38.25
   port: 443
   udp: true
   type: vless
-  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
+  uuid: b34a52cb-cd52-49a8-9362-b8e97c151d49
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
+    short-id: e90360ec7cc61b20
+  servername: udemy.com
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 03 - NJ
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 73a9e631a09b
-  servername: www.microsoft.com
-  client-fingerprint: firefox
+    short-id: 8325360e8bd2
+  servername: www.foxsports.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 04 - NJ
+  server: 31.77.13.22
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +62,8 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - NJ
   - 🇨🇿 捷克 (Czech) 02 - NJ
+  - 🇨🇿 捷克 (Czech) 03 - NJ
+  - 🇨🇿 捷克 (Czech) 04 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +71,7 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - NJ
   - 🇨🇿 捷克 (Czech) 02 - NJ
+  - 🇨🇿 捷克 (Czech) 03 - NJ
+  - 🇨🇿 捷克 (Czech) 04 - NJ
 rules:
 - MATCH,PROXIES

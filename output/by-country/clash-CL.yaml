@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - NJ
-  server: kw119.zxmm.eu.org
-  port: 20031
+- name: 🇨🇱 智利 (Chile) 01 - NJ
+  server: 64.176.7.205
+  port: 443
   udp: true
   type: trojan
-  password: 00a72bf349e6479b
-  sni: kw119.zxmm.eu.org
-  skip-cert-verify: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: advanceyouremploymentskillsandcareerdevelopmenthub.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - NJ
+  - 🇨🇱 智利 (Chile) 01 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - NJ
+  - 🇨🇱 智利 (Chile) 01 - NJ
 rules:
 - MATCH,PROXIES

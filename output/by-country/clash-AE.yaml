@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - NJ
-  server: 217.60.72.225
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 329e13e4-ee7c-4802-ac72-5fcab79c2402
-  sni: forshynewh.duckdns.org
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 02 - NJ
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -21,23 +13,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 03 - NJ
-  server: 57.129.130.200
-  port: 52014
-  udp: true
-  type: vless
-  uuid: c8b0617e-010f-43a8-b3d0-d5358febf0c9
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 04 - NJ
-  server: 130.49.161.70
+- name: 🇦🇪 阿联酋 (UAE) 02 - NJ
+  server: hy2.aspidnet.xyz
   port: 443
   udp: true
   type: hysteria2
@@ -46,6 +23,22 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 03 - NJ
+  server: 178.253.16.185
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: x2A6AsyZ-rAllz0wbKHzWA
+- name: 🇦🇪 阿联酋 (UAE) 04 - NJ
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇦🇪 阿联酋 (UAE) 05 - NJ
   server: 95.174.68.188
   port: 14430
@@ -55,34 +48,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 06 - NJ
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - NJ
-  server: 83.147.216.223
-  port: 4433
-  udp: true
-  type: vless
-  uuid: 660174a2-d32d-4521-840d-d1853bfc80b8
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,8 +58,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - NJ
   - 🇦🇪 阿联酋 (UAE) 04 - NJ
   - 🇦🇪 阿联酋 (UAE) 05 - NJ
-  - 🇦🇪 阿联酋 (UAE) 06 - NJ
-  - 🇦🇪 阿联酋 (UAE) 07 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,7 +68,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - NJ
   - 🇦🇪 阿联酋 (UAE) 04 - NJ
   - 🇦🇪 阿联酋 (UAE) 05 - NJ
-  - 🇦🇪 阿联酋 (UAE) 06 - NJ
-  - 🇦🇪 阿联酋 (UAE) 07 - NJ
 rules:
 - MATCH,PROXIES

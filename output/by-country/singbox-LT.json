@@ -15,9 +15,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - NJ",
       "server": "195.238.126.20",
-      "server_port": 9008,
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
@@ -31,13 +31,21 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 04 - NJ",
       "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - NJ",
+      "server": "195.238.126.20",
       "server_port": 9011,
       "method": "aes-256-cfb",
       "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - NJ",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - NJ",
       "server": "195.238.126.20",
       "server_port": 9045,
       "method": "aes-256-cfb",
@@ -45,15 +53,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - NJ",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - NJ",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9078,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - NJ",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - NJ",
+      "server": "195.238.126.20",
+      "server_port": 9001,
+      "method": "aes-256-cfb",
+      "password": "UkXRsXvR6buDMG2Y"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - NJ",
       "server": "195.238.126.20",
       "server_port": 9012,
       "method": "aes-256-cfb",
@@ -70,7 +86,9 @@
         "🇱🇹 立陶宛 (Lithuania) 04 - NJ",
         "🇱🇹 立陶宛 (Lithuania) 05 - NJ",
         "🇱🇹 立陶宛 (Lithuania) 06 - NJ",
-        "🇱🇹 立陶宛 (Lithuania) 07 - NJ"
+        "🇱🇹 立陶宛 (Lithuania) 07 - NJ",
+        "🇱🇹 立陶宛 (Lithuania) 08 - NJ",
+        "🇱🇹 立陶宛 (Lithuania) 09 - NJ"
       ]
     },
     {
@@ -83,7 +101,9 @@
         "🇱🇹 立陶宛 (Lithuania) 04 - NJ",
         "🇱🇹 立陶宛 (Lithuania) 05 - NJ",
         "🇱🇹 立陶宛 (Lithuania) 06 - NJ",
-        "🇱🇹 立陶宛 (Lithuania) 07 - NJ"
+        "🇱🇹 立陶宛 (Lithuania) 07 - NJ",
+        "🇱🇹 立陶宛 (Lithuania) 08 - NJ",
+        "🇱🇹 立陶宛 (Lithuania) 09 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
