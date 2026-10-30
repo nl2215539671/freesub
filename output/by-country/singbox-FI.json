@@ -4,12 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 01 - NJ",
-      "server": "65.21.52.113",
-      "server_port": 53731,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7"
+      "server": "153.76.194.118",
+      "server_port": 8443,
+      "password": "7d43670b-6b08-45b9-8a24-8f3971abc132",
+      "tls": {
+        "enabled": true,
+        "server_name": "finland.biznes.lol",
+        "insecure": false
+      }
     },
     {
       "type": "vless",
@@ -26,82 +30,8 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - NJ",
-      "server": "153.76.194.118",
-      "server_port": 8443,
-      "password": "7d43670b-6b08-45b9-8a24-8f3971abc132",
-      "tls": {
-        "enabled": true,
-        "server_name": "finland.biznes.lol",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - NJ",
-      "server": "45.144.52.187",
-      "server_port": 443,
-      "uuid": "7b22dce8-7ebd-425b-8ca4-7b6190321985",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "b.fi-1.bnc-gt.co.uk",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CegqLjzOImUmYD9ZdpOOG65UgNTGeQfRmpIni8iraB0",
-          "short_id": "7be1e9c243451b14"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - NJ",
-      "server": "31.77.199.147",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.unsplash.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A",
-          "short_id": "7da2eae792187ab9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - NJ",
-      "server": "hw3.divarkhaghazi.com.",
-      "server_port": 465,
-      "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
-      "tls": {
-        "enabled": true,
-        "server_name": "hw3.divarkhaghazi.com.",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - NJ",
       "server": "65.109.211.81",
       "server_port": 465,
       "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
@@ -126,6 +56,32 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - NJ",
+      "server": "65.109.210.221",
+      "server_port": 465,
+      "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
+      "tls": {
+        "enabled": true,
+        "server_name": "hw3.divarkhaghazi.com.",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "hw3.divarkhaghazi.com."
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -133,10 +89,7 @@
         "🇫🇮 芬兰 (Finland) 01 - NJ",
         "🇫🇮 芬兰 (Finland) 02 - NJ",
         "🇫🇮 芬兰 (Finland) 03 - NJ",
-        "🇫🇮 芬兰 (Finland) 04 - NJ",
-        "🇫🇮 芬兰 (Finland) 05 - NJ",
-        "🇫🇮 芬兰 (Finland) 06 - NJ",
-        "🇫🇮 芬兰 (Finland) 07 - NJ"
+        "🇫🇮 芬兰 (Finland) 04 - NJ"
       ]
     },
     {
@@ -146,10 +99,7 @@
         "🇫🇮 芬兰 (Finland) 01 - NJ",
         "🇫🇮 芬兰 (Finland) 02 - NJ",
         "🇫🇮 芬兰 (Finland) 03 - NJ",
-        "🇫🇮 芬兰 (Finland) 04 - NJ",
-        "🇫🇮 芬兰 (Finland) 05 - NJ",
-        "🇫🇮 芬兰 (Finland) 06 - NJ",
-        "🇫🇮 芬兰 (Finland) 07 - NJ"
+        "🇫🇮 芬兰 (Finland) 04 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

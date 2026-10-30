@@ -69,51 +69,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - NJ",
-      "server": "206.1.101.85",
-      "server_port": 42654,
-      "uuid": "5a82be1c-ed6a-4f98-a767-05df0f7be3e7",
-      "tls": {
-        "enabled": true,
-        "server_name": "206.1.101.85",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - NJ",
-      "server": "177.3.208.65",
-      "server_port": 443,
-      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
-      "tls": {
-        "enabled": true,
-        "server_name": "tgmansion.site",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless-tr"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - NJ",
         "🇹🇷 土耳其 (Turkey) 02 - NJ",
-        "🇹🇷 土耳其 (Turkey) 03 - NJ",
-        "🇹🇷 土耳其 (Turkey) 04 - NJ",
-        "🇹🇷 土耳其 (Turkey) 05 - NJ"
+        "🇹🇷 土耳其 (Turkey) 03 - NJ"
       ]
     },
     {
@@ -122,9 +84,7 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - NJ",
         "🇹🇷 土耳其 (Turkey) 02 - NJ",
-        "🇹🇷 土耳其 (Turkey) 03 - NJ",
-        "🇹🇷 土耳其 (Turkey) 04 - NJ",
-        "🇹🇷 土耳其 (Turkey) 05 - NJ"
+        "🇹🇷 土耳其 (Turkey) 03 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

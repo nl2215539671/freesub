@@ -44,31 +44,6 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 04 - NJ
-  server: 206.1.101.85
-  port: 42654
-  udp: true
-  type: vless
-  uuid: 5a82be1c-ed6a-4f98-a767-05df0f7be3e7
-  tls: true
-  servername: 206.1.101.85
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇹🇷 土耳其 (Turkey) 05 - NJ
-  server: 177.3.208.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-tr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,8 +52,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - NJ
   - 🇹🇷 土耳其 (Turkey) 02 - NJ
   - 🇹🇷 土耳其 (Turkey) 03 - NJ
-  - 🇹🇷 土耳其 (Turkey) 04 - NJ
-  - 🇹🇷 土耳其 (Turkey) 05 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,7 +60,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - NJ
   - 🇹🇷 土耳其 (Turkey) 02 - NJ
   - 🇹🇷 土耳其 (Turkey) 03 - NJ
-  - 🇹🇷 土耳其 (Turkey) 04 - NJ
-  - 🇹🇷 土耳其 (Turkey) 05 - NJ
 rules:
 - MATCH,PROXIES
