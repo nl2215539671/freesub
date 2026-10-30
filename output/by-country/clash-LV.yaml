@@ -16,29 +16,8 @@ proxies:
     public-key: M4Y9h339sntl5wEpiCa7f4IKhJ_8JLzPnAz2IzKlngM
     short-id: af4ca5d16438c938
   servername: vikt659.isgood.host
-  client-fingerprint: ''
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - NJ
-  server: 138.124.180.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - NJ
-  server: 104.165.205.21
-  port: 9443
-  udp: true
-  type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  skip-cert-verify: false
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - NJ
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - NJ
   server: 195.123.213.28
   port: 443
   udp: true
@@ -51,27 +30,20 @@ proxies:
     short-id: 5c256336e3b673fa
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - NJ
-  server: 104.165.205.142
-  port: 9443
-  udp: true
-  type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  skip-cert-verify: false
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - NJ
-  server: 45.38.143.210
-  port: 30584
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - NJ
+  server: 138.124.180.137
+  port: 443
   udp: true
   type: vless
-  uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
-    short-id: 67ece882d65d0f1a
-  servername: m.vk.com
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - NJ
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - NJ
   server: 31.58.171.53
   port: 443
   udp: true
@@ -84,6 +56,19 @@ proxies:
     short-id: f77f3068
   servername: dl.google.com
   client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - NJ
+  server: 195.123.208.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
+    short-id: 757b9e1ef18e60f0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,8 +79,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - NJ
   - 🇱🇻 拉脱维亚 (Latvia) 04 - NJ
   - 🇱🇻 拉脱维亚 (Latvia) 05 - NJ
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - NJ
-  - 🇱🇻 拉脱维亚 (Latvia) 07 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -106,7 +89,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - NJ
   - 🇱🇻 拉脱维亚 (Latvia) 04 - NJ
   - 🇱🇻 拉脱维亚 (Latvia) 05 - NJ
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - NJ
-  - 🇱🇻 拉脱维亚 (Latvia) 07 - NJ
 rules:
 - MATCH,PROXIES

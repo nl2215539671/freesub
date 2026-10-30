@@ -58,21 +58,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - NJ",
-      "server": "cd0.bmi.ir.kolman.com.de",
-      "server_port": 80,
-      "uuid": "2da85937-93d9-4509-8491-63b1921cf447",
-      "security": "auto",
-      "transport": {
-        "type": "httpupgrade",
-        "path": "/f9bGbG7ZNy5L0tzXKZNxSX4q",
-        "host": "bmi.ir.draft.co.impossible.com.ir.bmi.ir.com.iran.ir6.ifilmino.com"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - NJ",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - NJ",
       "server": "65.109.210.221",
       "server_port": 465,
       "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
@@ -95,6 +82,14 @@
           "Host": "hw3.divarkhaghazi.com."
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - NJ",
+      "server": "65.21.52.113",
+      "server_port": 53731,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7"
     },
     {
       "type": "vless",
@@ -125,27 +120,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 07 - NJ",
-      "server": "6.bmi.ir.asopardaz.ir",
-      "server_port": 8443,
-      "uuid": "2da85937-93d9-4509-8491-63b1921cf447",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "hostgator.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
-          "short_id": "e915"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - NJ",
       "server": "196.196.204.174",
       "server_port": 443,
       "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
@@ -178,8 +152,7 @@
         "🇫🇮 芬兰 (Finland) 04 - NJ",
         "🇫🇮 芬兰 (Finland) 05 - NJ",
         "🇫🇮 芬兰 (Finland) 06 - NJ",
-        "🇫🇮 芬兰 (Finland) 07 - NJ",
-        "🇫🇮 芬兰 (Finland) 08 - NJ"
+        "🇫🇮 芬兰 (Finland) 07 - NJ"
       ]
     },
     {
@@ -192,8 +165,7 @@
         "🇫🇮 芬兰 (Finland) 04 - NJ",
         "🇫🇮 芬兰 (Finland) 05 - NJ",
         "🇫🇮 芬兰 (Finland) 06 - NJ",
-        "🇫🇮 芬兰 (Finland) 07 - NJ",
-        "🇫🇮 芬兰 (Finland) 08 - NJ"
+        "🇫🇮 芬兰 (Finland) 07 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,17 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - NJ",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
+      "server": "50.7.38.243",
+      "server_port": 443,
+      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
+      "tls": {
+        "enabled": true,
+        "server_name": "promo.betust.net",
+        "insecure": false
       }
     },
     {
@@ -26,24 +24,12 @@
       "tls": {
         "enabled": true,
         "server_name": "diffoscope.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - NJ",
-      "server": "50.7.38.243",
-      "server_port": 443,
-      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
-      "tls": {
-        "enabled": true,
-        "server_name": "promo.betust.net",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - NJ",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - NJ",
       "server": "31.172.65.4",
       "server_port": 8443,
       "uuid": "9c6e83fc-b755-4ad4-9b0a-14b610153d8f",
@@ -69,8 +55,7 @@
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - NJ",
         "🇸🇪 瑞典 (Sweden) 02 - NJ",
-        "🇸🇪 瑞典 (Sweden) 03 - NJ",
-        "🇸🇪 瑞典 (Sweden) 04 - NJ"
+        "🇸🇪 瑞典 (Sweden) 03 - NJ"
       ]
     },
     {
@@ -79,8 +64,7 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - NJ",
         "🇸🇪 瑞典 (Sweden) 02 - NJ",
-        "🇸🇪 瑞典 (Sweden) 03 - NJ",
-        "🇸🇪 瑞典 (Sweden) 04 - NJ"
+        "🇸🇪 瑞典 (Sweden) 03 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

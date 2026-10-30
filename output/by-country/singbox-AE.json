@@ -22,48 +22,6 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - NJ",
-      "server": "185.253.116.33",
-      "server_port": 14430,
-      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - NJ",
-      "server": "46.101.46.169",
-      "server_port": 486,
-      "uuid": "16bf3359-e7d8-4de6-86a0-6d65cf793b56",
-      "tls": {
-        "enabled": true,
-        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - NJ",
-      "server": "ams1.rvpn.app",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "x2A6AsyZ-rAllz0wbKHzWA"
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - NJ",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -76,17 +34,22 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - NJ",
+      "server": "ams1.rvpn.app",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "x2A6AsyZ-rAllz0wbKHzWA"
+    },
+    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - NJ",
-      "server": "95.174.68.188",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - NJ",
+      "server": "185.253.116.33",
       "server_port": 14430,
-      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "95.174.68.188"
-        }
+        "path": "/vless"
       }
     },
     {
@@ -97,9 +60,7 @@
         "🇦🇪 阿联酋 (UAE) 01 - NJ",
         "🇦🇪 阿联酋 (UAE) 02 - NJ",
         "🇦🇪 阿联酋 (UAE) 03 - NJ",
-        "🇦🇪 阿联酋 (UAE) 04 - NJ",
-        "🇦🇪 阿联酋 (UAE) 05 - NJ",
-        "🇦🇪 阿联酋 (UAE) 06 - NJ"
+        "🇦🇪 阿联酋 (UAE) 04 - NJ"
       ]
     },
     {
@@ -109,9 +70,7 @@
         "🇦🇪 阿联酋 (UAE) 01 - NJ",
         "🇦🇪 阿联酋 (UAE) 02 - NJ",
         "🇦🇪 阿联酋 (UAE) 03 - NJ",
-        "🇦🇪 阿联酋 (UAE) 04 - NJ",
-        "🇦🇪 阿联酋 (UAE) 05 - NJ",
-        "🇦🇪 阿联酋 (UAE) 06 - NJ"
+        "🇦🇪 阿联酋 (UAE) 04 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

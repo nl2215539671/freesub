@@ -4,25 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - NJ",
-      "server": "172.66.47.45",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 01 - NJ",
+      "server": "104.21.15.251",
+      "server_port": 443,
+      "uuid": "ba1116e2-8c2f-4e3d-8e50-c954360cf970",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "wk1.f1w.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "www.windowssearchtools.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/truth",
         "headers": {
-          "Host": "wk1.f1w.de5.net"
+          "Host": "www.windowssearchtools.com"
         }
       }
     },
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (移动家宽) - NJ"
+        "🌐 其他地区 (Other) 01 - NJ"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (移动家宽) - NJ"
+        "🌐 其他地区 (Other) 01 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
