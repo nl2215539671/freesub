@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "server_name": "https://t.me/wangcai2🇨🇳",
         "insecure": true
       }
     },
@@ -37,20 +37,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - NJ",
-      "server": "vpn-tw-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world%5cu0026insecure%3d1%5cu0026allowinsecure%3d1",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - NJ",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - NJ",
       "server": "n04.jinggai.online",
       "server_port": 8443,
       "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
@@ -78,8 +66,7 @@
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - NJ",
         "🇹🇼 中国台湾 (Taiwan) 02 - NJ",
-        "🇹🇼 中国台湾 (Taiwan) 03 - NJ",
-        "🇹🇼 中国台湾 (Taiwan) 04 - NJ"
+        "🇹🇼 中国台湾 (Taiwan) 03 - NJ"
       ]
     },
     {
@@ -88,8 +75,7 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - NJ",
         "🇹🇼 中国台湾 (Taiwan) 02 - NJ",
-        "🇹🇼 中国台湾 (Taiwan) 03 - NJ",
-        "🇹🇼 中国台湾 (Taiwan) 04 - NJ"
+        "🇹🇼 中国台湾 (Taiwan) 03 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

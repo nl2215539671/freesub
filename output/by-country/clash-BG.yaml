@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - NJ
   server: 213.183.63.60
-  port: 9028
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - NJ
-  server: 213.183.63.60
-  port: 9066
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - NJ
-  server: 213.183.63.60
   port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - NJ
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - NJ
   server: 213.183.63.60
   port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: GeregetR8cvQHzYr
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - NJ
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - NJ
+  server: 213.183.63.60
+  port: 9028
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - NJ
   server: 93.152.223.244
   port: 443
@@ -57,18 +57,6 @@ proxies:
     short-id: 77bb0d07bddbc832
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - NJ
-  server: p1real4.greewebservices.ir
-  port: 1260
-  udp: true
-  type: vless
-  uuid: f234330e-f9df-46e3-8f60-b2af5173c147
-  tls: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 9b60d3
-  servername: play.googleapis.com
-  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,7 +68,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - NJ
   - 🇧🇬 保加利亚 (Bulgaria) 05 - NJ
   - 🇧🇬 保加利亚 (Bulgaria) 06 - NJ
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,6 +79,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - NJ
   - 🇧🇬 保加利亚 (Bulgaria) 05 - NJ
   - 🇧🇬 保加利亚 (Bulgaria) 06 - NJ
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - NJ
 rules:
 - MATCH,PROXIES

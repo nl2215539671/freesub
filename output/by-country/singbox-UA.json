@@ -6,19 +6,21 @@
     {
       "type": "vless",
       "tag": "🇺🇦 乌克兰 (Ukraine) 01 - NJ",
-      "server": "216.24.57.225",
-      "server_port": 2083,
-      "uuid": "3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6",
+      "server": "104.253.216.227",
+      "server_port": 443,
+      "uuid": "de38389f-5651-4f2f-8276-5aabf3b861c9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pol.netvia.ir",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wss",
-        "headers": {
-          "Host": "pol.netvia.ir"
+        "server_name": "www.hollywoodreporter.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
+          "short_id": "225e930cfd4d"
         }
       }
     },
