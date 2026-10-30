@@ -4,22 +4,44 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - NJ",
-      "server": "104.21.15.251",
+      "server": "188.114.97.2",
       "server_port": 443,
-      "uuid": "ba1116e2-8c2f-4e3d-8e50-c954360cf970",
-      "security": "auto",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "www.windowssearchtools.com",
+        "server_name": "www.pleadcourt.org",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/truth",
+        "path": "/assignment",
         "headers": {
-          "Host": "www.windowssearchtools.com"
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 02 - NJ",
+      "server": "188.114.97.2",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
         }
       }
     },
@@ -28,14 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - NJ"
+        "🌐 其他地区 (Other) 01 - NJ",
+        "🌐 其他地区 (Other) 02 - NJ"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - NJ"
+        "🌐 其他地区 (Other) 01 - NJ",
+        "🌐 其他地区 (Other) 02 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
