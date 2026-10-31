@@ -4,43 +4,50 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - NJ",
-      "server": "155.117.19.17",
-      "server_port": 443,
-      "password": "5fa748137b6d822308eea4611f474ad5",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - NJ",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - NJ",
       "server": "112.169.175.199",
       "server_port": 31157,
       "uuid": "bd2fb303-b4c7-49af-a8e3-5c6f11b005dd"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 (家宽) - NJ",
+      "server": "122.176.216.52",
+      "server_port": 443,
+      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+      "tls": {
+        "enabled": true,
+        "server_name": "app-6ada5023.deploy.meerasolution.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+        "headers": {
+          "Host": "app-6ada5023.deploy.meerasolution.com"
+        }
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - NJ",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - NJ"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - NJ",
+        "🇮🇳 印度 (India) 02 (家宽) - NJ"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - NJ",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - NJ"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - NJ",
+        "🇮🇳 印度 (India) 02 (家宽) - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

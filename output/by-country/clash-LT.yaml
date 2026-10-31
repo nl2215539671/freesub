@@ -13,25 +13,18 @@ proxies:
   password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - NJ
   server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - NJ
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - NJ
-  server: 195.238.126.20
   port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: Lp27rqyJq72bZsqX
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - NJ
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +33,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 01 - NJ
   - 🇱🇹 立陶宛 (Lithuania) 02 - NJ
   - 🇱🇹 立陶宛 (Lithuania) 03 - NJ
-  - 🇱🇹 立陶宛 (Lithuania) 04 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,6 +41,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 01 - NJ
   - 🇱🇹 立陶宛 (Lithuania) 02 - NJ
   - 🇱🇹 立陶宛 (Lithuania) 03 - NJ
-  - 🇱🇹 立陶宛 (Lithuania) 04 - NJ
 rules:
 - MATCH,PROXIES

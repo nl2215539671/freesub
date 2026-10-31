@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - NJ",
-      "server": "104.253.216.227",
+      "tag": "🇮🇳 印度 (India) 01 (家宽) - NJ",
+      "server": "122.176.216.52",
       "server_port": 443,
-      "uuid": "de38389f-5651-4f2f-8276-5aabf3b861c9",
-      "flow": "xtls-rprx-vision",
+      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
       "tls": {
         "enabled": true,
-        "server_name": "www.hollywoodreporter.com",
+        "server_name": "app-6ada5023.deploy.meerasolution.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "225e930cfd4d"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+        "headers": {
+          "Host": "app-6ada5023.deploy.meerasolution.com"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - NJ"
+        "🇮🇳 印度 (India) 01 (家宽) - NJ"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - NJ"
+        "🇮🇳 印度 (India) 01 (家宽) - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

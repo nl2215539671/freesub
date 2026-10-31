@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇬🇷 希腊 (Greece) 01 - NJ",
-      "server": "62.60.229.216",
-      "server_port": 443,
-      "uuid": "706bce83-91db-4260-b175-cba29145cd56",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "aezaf1.uni-plan.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "eh8WqxaSUlfNmlGzFLYFYrJzk1novnvfU6qmaLLOiX4",
-          "short_id": "72d410ce5f2036c9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 02 - NJ",
       "server": "85.90.197.220",
       "server_port": 443,
       "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
@@ -36,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -50,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 (Greece) 01 - NJ",
-        "🇬🇷 希腊 (Greece) 02 - NJ"
+        "🇬🇷 希腊 (Greece) 01 - NJ"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 (Greece) 01 - NJ",
-        "🇬🇷 希腊 (Greece) 02 - NJ"
+        "🇬🇷 希腊 (Greece) 01 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

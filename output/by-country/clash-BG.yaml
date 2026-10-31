@@ -5,38 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - NJ
-  server: 93.152.223.244
-  port: 443
+  server: 213.183.63.60
+  port: 9029
   udp: true
-  type: vless
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: yKwDGqOdkC_nEPOQHMvAQLPcPK8YHskv_opYoY66Yk8
-  servername: ddk5-ger.newagetechnologies.live
-  client-fingerprint: qq
+  type: ss
+  cipher: aes-256-cfb
+  password: dU3DSNS8wYPXzEKw
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - NJ
   server: 213.183.63.60
-  port: 9030
+  port: 9085
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
+  password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - NJ
   server: 213.183.63.60
-  port: 9098
+  port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
+  password: 2KUaE2a8NWTvuCZ3
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - NJ
   server: 213.183.63.60
-  port: 9049
+  port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
+  password: 9eeJ2fwnZA5Fxgz8
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - NJ
   server: 213.183.63.60
   port: 9054
@@ -46,40 +41,12 @@ proxies:
   password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - NJ
   server: 213.183.63.60
-  port: 9028
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - NJ
-  server: 213.183.63.60
-  port: 9066
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - NJ
-  server: 213.183.63.60
   port: 9061
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 4R3hUfZ2FHhDmNcP
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - NJ
-  server: 213.183.63.60
-  port: 9029
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - NJ
-  server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 11 - NJ
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - NJ
   server: 195.123.226.21
   port: 443
   udp: true
@@ -92,6 +59,31 @@ proxies:
     short-id: 77bb0d07bddbc832
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - NJ
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - NJ
+  server: 213.183.63.60
+  port: 9049
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 - NJ
+  server: 192.145.30.27
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,7 +99,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - NJ
   - 🇧🇬 保加利亚 (Bulgaria) 09 - NJ
   - 🇧🇬 保加利亚 (Bulgaria) 10 - NJ
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -123,6 +114,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - NJ
   - 🇧🇬 保加利亚 (Bulgaria) 09 - NJ
   - 🇧🇬 保加利亚 (Bulgaria) 10 - NJ
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - NJ
 rules:
 - MATCH,PROXIES

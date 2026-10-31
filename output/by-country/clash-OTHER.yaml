@@ -5,32 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - NJ
-  server: 104.21.15.251
+  server: 8.47.69.0
   port: 443
   udp: true
-  type: vmess
-  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: www.windowssearchtools.com
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /truth
-    headers:
-      Host: www.windowssearchtools.com
+    path: /assignment
+- name: 🌐 其他地区 (Other) 02 - NJ
+  server: 8.47.69.0
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - NJ
+  - 🌐 其他地区 (Other) 02 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - NJ
+  - 🌐 其他地区 (Other) 02 - NJ
 rules:
 - MATCH,PROXIES
