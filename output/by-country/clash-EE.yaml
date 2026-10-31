@@ -23,6 +23,16 @@ proxies:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
     short-id: a73f0410d728c823
   servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - NJ
+  server: 179.253.179.109
+  port: 57043
+  udp: true
+  type: vless
+  uuid: da8fab8e-4a25-4eb0-b224-88ab96c753ce
+  tls: true
+  servername: 87.121.86.24
+  skip-cert-verify: false
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -31,6 +41,7 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - NJ
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - NJ
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +49,6 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - NJ
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - NJ
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - NJ
 rules:
 - MATCH,PROXIES

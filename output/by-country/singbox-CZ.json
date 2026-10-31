@@ -36,7 +36,7 @@
         "server_name": "udemy.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -46,12 +46,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - NJ",
+      "server": "cz-prg.dontblockmepls.com",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rusbid.de",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - NJ",
-        "🇨🇿 捷克 (Czech) 02 - NJ"
+        "🇨🇿 捷克 (Czech) 02 - NJ",
+        "🇨🇿 捷克 (Czech) 03 - NJ"
       ]
     },
     {
@@ -59,7 +81,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - NJ",
-        "🇨🇿 捷克 (Czech) 02 - NJ"
+        "🇨🇿 捷克 (Czech) 02 - NJ",
+        "🇨🇿 捷克 (Czech) 03 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
