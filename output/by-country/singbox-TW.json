@@ -16,8 +16,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - NJ",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - NJ",
       "server": "141.11.87.77",
       "server_port": 443,
       "uuid": "4a270d3e-27b4-497d-8c8c-28f1f54958d9",
@@ -37,57 +49,31 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - NJ",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 04 - NJ",
-      "server": "152.32.167.33",
-      "server_port": 443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4",
-          "short_id": "cff998a4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - NJ",
       "server": "n04.jinggai.online",
       "server_port": 8443,
       "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
       "tls": {
         "enabled": true,
         "server_name": "n04.jinggai.online",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/nvl-n04-ws/e0577fe8fd7c8823"
+        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
+        "headers": {
+          "Host": "n04.jinggai.online"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 - NJ",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - NJ",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -113,8 +99,7 @@
         "🇹🇼 中国台湾 (Taiwan) 02 - NJ",
         "🇹🇼 中国台湾 (Taiwan) 03 - NJ",
         "🇹🇼 中国台湾 (Taiwan) 04 - NJ",
-        "🇹🇼 中国台湾 (Taiwan) 05 - NJ",
-        "🇹🇼 中国台湾 (Taiwan) 06 - NJ"
+        "🇹🇼 中国台湾 (Taiwan) 05 - NJ"
       ]
     },
     {
@@ -125,8 +110,7 @@
         "🇹🇼 中国台湾 (Taiwan) 02 - NJ",
         "🇹🇼 中国台湾 (Taiwan) 03 - NJ",
         "🇹🇼 中国台湾 (Taiwan) 04 - NJ",
-        "🇹🇼 中国台湾 (Taiwan) 05 - NJ",
-        "🇹🇼 中国台湾 (Taiwan) 06 - NJ"
+        "🇹🇼 中国台湾 (Taiwan) 05 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

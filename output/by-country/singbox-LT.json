@@ -7,17 +7,33 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - NJ",
       "server": "195.238.126.20",
-      "server_port": 9045,
+      "server_port": 9008,
       "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
+      "password": "y9VURyNzJWNRYEGQ"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - NJ",
       "server": "195.238.126.20",
+      "server_port": 9012,
+      "method": "aes-256-cfb",
+      "password": "xaupMUvhptwxdDUg"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - NJ",
+      "server": "195.238.126.20",
       "server_port": 9011,
       "method": "aes-256-cfb",
       "password": "M3t2ZEQcMGRWBjRa"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - NJ",
+      "server": "195.238.126.20",
+      "server_port": 9045,
+      "method": "aes-256-cfb",
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "selector",
@@ -25,7 +41,9 @@
       "outbounds": [
         "auto",
         "🇱🇹 立陶宛 (Lithuania) 01 - NJ",
-        "🇱🇹 立陶宛 (Lithuania) 02 - NJ"
+        "🇱🇹 立陶宛 (Lithuania) 02 - NJ",
+        "🇱🇹 立陶宛 (Lithuania) 03 - NJ",
+        "🇱🇹 立陶宛 (Lithuania) 04 - NJ"
       ]
     },
     {
@@ -33,7 +51,9 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇹 立陶宛 (Lithuania) 01 - NJ",
-        "🇱🇹 立陶宛 (Lithuania) 02 - NJ"
+        "🇱🇹 立陶宛 (Lithuania) 02 - NJ",
+        "🇱🇹 立陶宛 (Lithuania) 03 - NJ",
+        "🇱🇹 立陶宛 (Lithuania) 04 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

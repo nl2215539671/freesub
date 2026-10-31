@@ -14,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -58,20 +58,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 04 - NJ",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 05 - NJ",
+      "tag": "🇮🇳 印度 (India) 04 - NJ",
       "server": "in002.zestapp778.com",
       "server_port": 42733,
       "password": "5t6i121em5lkmsmk",
@@ -89,8 +77,7 @@
         "🇮🇳 印度 (India) 01 - NJ",
         "🇮🇳 印度 (India) 02 - NJ",
         "🇮🇳 印度 (India) 03 - NJ",
-        "🇮🇳 印度 (India) 04 - NJ",
-        "🇮🇳 印度 (India) 05 - NJ"
+        "🇮🇳 印度 (India) 04 - NJ"
       ]
     },
     {
@@ -100,8 +87,7 @@
         "🇮🇳 印度 (India) 01 - NJ",
         "🇮🇳 印度 (India) 02 - NJ",
         "🇮🇳 印度 (India) 03 - NJ",
-        "🇮🇳 印度 (India) 04 - NJ",
-        "🇮🇳 印度 (India) 05 - NJ"
+        "🇮🇳 印度 (India) 04 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
