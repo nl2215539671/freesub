@@ -10,34 +10,48 @@ proxies:
   udp: true
   type: vless
   uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
-- name: 🇮🇳 印度 (India) 02 (家宽) - NJ
-  server: 122.176.216.52
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - NJ
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - NJ
+  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
   port: 443
   udp: true
-  type: vless
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-  tls: true
-  servername: app-6ada5023.deploy.meerasolution.com
+  type: hysteria2
+  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-    headers:
-      Host: app-6ada5023.deploy.meerasolution.com
+- name: 🇺🇸 美国 (United States) 04 (家宽) - NJ
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - NJ
-  - 🇮🇳 印度 (India) 02 (家宽) - NJ
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - NJ
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - NJ
+  - 🇺🇸 美国 (United States) 04 (家宽) - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - NJ
-  - 🇮🇳 印度 (India) 02 (家宽) - NJ
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - NJ
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - NJ
+  - 🇺🇸 美国 (United States) 04 (家宽) - NJ
 rules:
 - MATCH,PROXIES

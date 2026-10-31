@@ -4,65 +4,46 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - NJ",
-      "server": "189.24.79.229",
-      "server_port": 443,
-      "uuid": "ee29ce31-ee5e-479b-900c-97c50e0f1218",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Di20k-Yrc4tfKGcSYCLp88xDaYMsIrIa_6go-QvAVCw",
-          "short_id": "6717a9ae"
+      "server": "185.22.155.121",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - NJ",
+      "server": "az-1.linkaa.xyz",
+      "server_port": 53110,
+      "uuid": "6E571484-4166-4699-8F58-B34A1823691F",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/game/resources",
+        "headers": {
+          "Host": "az-1.linkaa.xyz"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - NJ",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/wangcai2ⁿß",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 - NJ",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "202.146.222.89",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - NJ",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "off",
-        "insecure": true
+      "server": "az-1.linkaa.xyz",
+      "server_port": 53617,
+      "uuid": "6E571484-4166-4699-8F58-B34A1823691F",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/game/resources",
+        "headers": {
+          "Host": "az-1.linkaa.xyz"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - NJ",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - NJ",
       "server": "165.154.63.139",
       "server_port": 443,
       "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
@@ -82,8 +63,68 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - NJ",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/clashv8\\u0001f1e8\\u0001f1f3",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 06 - NJ",
+      "server": "31.57.248.176",
+      "server_port": 50160,
+      "password": "b0917015b656b3dd2286b5633af0c5c1",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com%23%e9%a6%83%e5%9a%9f%e9%a6%83%e5%9a%a2%7chk%7c%40wxgqlfx%7c147",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - NJ",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - NJ",
+      "server": "vpn-hk-004.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-hk-004.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - NJ",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - NJ",
       "server": "195.58.144.56",
       "server_port": 11907,
       "uuid": "07cb07b9-0c4d-46c1-a15a-b147511b6b07",
@@ -103,7 +144,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - NJ",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - NJ",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
@@ -118,6 +159,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 12 - NJ",
+      "server": "189.24.79.229",
+      "server_port": 443,
+      "uuid": "ee29ce31-ee5e-479b-900c-97c50e0f1218",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Di20k-Yrc4tfKGcSYCLp88xDaYMsIrIa_6go-QvAVCw",
+          "short_id": "6717a9ae"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -128,7 +190,12 @@
         "🇭🇰 中国香港 (Hong Kong) 04 - NJ",
         "🇭🇰 中国香港 (Hong Kong) 05 - NJ",
         "🇭🇰 中国香港 (Hong Kong) 06 - NJ",
-        "🇭🇰 中国香港 (Hong Kong) 07 - NJ"
+        "🇭🇰 中国香港 (Hong Kong) 07 - NJ",
+        "🇭🇰 中国香港 (Hong Kong) 08 - NJ",
+        "🇭🇰 中国香港 (Hong Kong) 09 - NJ",
+        "🇭🇰 中国香港 (Hong Kong) 10 - NJ",
+        "🇭🇰 中国香港 (Hong Kong) 11 - NJ",
+        "🇭🇰 中国香港 (Hong Kong) 12 - NJ"
       ]
     },
     {
@@ -141,7 +208,12 @@
         "🇭🇰 中国香港 (Hong Kong) 04 - NJ",
         "🇭🇰 中国香港 (Hong Kong) 05 - NJ",
         "🇭🇰 中国香港 (Hong Kong) 06 - NJ",
-        "🇭🇰 中国香港 (Hong Kong) 07 - NJ"
+        "🇭🇰 中国香港 (Hong Kong) 07 - NJ",
+        "🇭🇰 中国香港 (Hong Kong) 08 - NJ",
+        "🇭🇰 中国香港 (Hong Kong) 09 - NJ",
+        "🇭🇰 中国香港 (Hong Kong) 10 - NJ",
+        "🇭🇰 中国香港 (Hong Kong) 11 - NJ",
+        "🇭🇰 中国香港 (Hong Kong) 12 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
