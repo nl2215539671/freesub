@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - NJ",
-      "server": "107.189.7.176",
-      "server_port": 32752,
-      "uuid": "4970c1cd-13e1-498a-920a-61d07be2fa65",
+      "tag": "🇲🇴 MO 01 - NJ",
+      "server": "mo01.dw.sh-cloudflare.sbs",
+      "server_port": 11107,
+      "uuid": "c86efa7e-f7fb-47d6-b832-6b44cf5e8b71",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "cdn-dynmedia-1.microsoft.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA",
-          "short_id": "d758a643034ad90e"
+          "public_key": "cIAvdh9g8o4OWaCs4yY1aKxz32F0N73O7kQpqp3oQHg",
+          "short_id": "9433bfa1"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 卢森堡 (Luxembourg) 01 - NJ"
+        "🇲🇴 MO 01 - NJ"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 卢森堡 (Luxembourg) 01 - NJ"
+        "🇲🇴 MO 01 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

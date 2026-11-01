@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - NJ",
+      "server": "45.63.30.142",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "connectwithemployerstohireyouridealteam.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - NJ",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -20,15 +32,24 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - NJ",
-      "server": "45.63.30.142",
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - NJ",
+      "server": "207.148.80.199",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "6033ee9d-7c2a-4f37-a055-0c0d2d8487f0",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "45.63.30.142",
-        "insecure": true
+        "server_name": "ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ",
+          "short_id": ""
+        }
       }
     },
     {
@@ -37,7 +58,8 @@
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - NJ",
-        "🇦🇺 澳大利亚 (Australia) 02 - NJ"
+        "🇦🇺 澳大利亚 (Australia) 02 - NJ",
+        "🇦🇺 澳大利亚 (Australia) 03 - NJ"
       ]
     },
     {
@@ -45,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - NJ",
-        "🇦🇺 澳大利亚 (Australia) 02 - NJ"
+        "🇦🇺 澳大利亚 (Australia) 02 - NJ",
+        "🇦🇺 澳大利亚 (Australia) 03 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
