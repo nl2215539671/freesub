@@ -4,57 +4,64 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - NJ
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - NJ
+  server: us001.zestapp778.com
+  port: 57277
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: us001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - NJ
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - NJ
-  server: 0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-  tls: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - NJ
-  server: e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com
+  server: bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 40639730-e027-11ea-87ad-f23c913c8d2b
-  sni: e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - NJ
-  server: 112.120.123.140
-  port: 443
-  udp: true
-  type: hysteria2
-  password: e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9
-  sni: 525b1a38-tly2o0-tn5bnx-19xg1.nw4.hyhuawei.com
+  password: ae5338ae-9a70-58c9-3d47-7d54a5675715
+  sni: bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com
   skip-cert-verify: false
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - NJ
+  server: ench-snet-app.w-ctrip.cn
+  port: 45503
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - NJ
+  server: ench-snet-app.w-ctrip.cn
+  port: 45502
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - NJ
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - NJ
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - NJ
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - NJ
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - NJ
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - NJ
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - NJ
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - NJ
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - NJ
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - NJ
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - NJ
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - NJ
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - NJ
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - NJ
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - NJ
 rules:
 - MATCH,PROXIES

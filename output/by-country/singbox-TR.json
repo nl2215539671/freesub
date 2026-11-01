@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - NJ",
+      "server": "153.56.210.61",
+      "server_port": 443,
+      "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
+          "short_id": "a696de84963656de"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - NJ",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -26,7 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - NJ",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - NJ",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -35,7 +56,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -46,7 +67,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - NJ",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - NJ",
+      "server": "tr2.h1cloud.net",
+      "server_port": 25021,
+      "uuid": "2446e2e2-1ce3-4502-9050-1dd32bacc68c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg",
+          "short_id": "17fa3af0924c88b3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - NJ",
       "server": "62.133.63.45",
       "server_port": 8444,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -69,26 +111,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - NJ",
-      "server": "177.3.208.65",
-      "server_port": 443,
-      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
-      "tls": {
-        "enabled": true,
-        "server_name": "tgmansion.site",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless-tr"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -96,7 +118,8 @@
         "🇹🇷 土耳其 (Turkey) 01 - NJ",
         "🇹🇷 土耳其 (Turkey) 02 - NJ",
         "🇹🇷 土耳其 (Turkey) 03 - NJ",
-        "🇹🇷 土耳其 (Turkey) 04 - NJ"
+        "🇹🇷 土耳其 (Turkey) 04 - NJ",
+        "🇹🇷 土耳其 (Turkey) 05 - NJ"
       ]
     },
     {
@@ -106,7 +129,8 @@
         "🇹🇷 土耳其 (Turkey) 01 - NJ",
         "🇹🇷 土耳其 (Turkey) 02 - NJ",
         "🇹🇷 土耳其 (Turkey) 03 - NJ",
-        "🇹🇷 土耳其 (Turkey) 04 - NJ"
+        "🇹🇷 土耳其 (Turkey) 04 - NJ",
+        "🇹🇷 土耳其 (Turkey) 05 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

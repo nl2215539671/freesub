@@ -4,23 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - NJ",
-      "server": "az-1.linkaa.xyz",
-      "server_port": 55386,
-      "uuid": "6E571484-4166-4699-8F58-B34A1823691F",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/game/resources",
-        "headers": {
-          "Host": "az-1.linkaa.xyz"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 02 - NJ",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - NJ",
       "server": "130.94.95.198",
       "server_port": 57353,
       "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
@@ -39,16 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - NJ",
-        "🇮🇩 印尼 (Indonesia) 02 - NJ"
+        "🇮🇩 印尼 (Indonesia) 01 - NJ"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - NJ",
-        "🇮🇩 印尼 (Indonesia) 02 - NJ"
+        "🇮🇩 印尼 (Indonesia) 01 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

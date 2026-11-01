@@ -4,55 +4,59 @@
   },
   "outbounds": [
     {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - NJ",
+      "server": "us001.zestapp778.com",
+      "server_port": 57277,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "us001.zestapp778.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - NJ",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - NJ",
       "server": "49.254.204.133",
       "server_port": 1774,
       "method": "aes-256-cfb",
       "password": "1234!@#$"
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - NJ",
-      "server": "0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - NJ",
+      "server": "bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com",
       "server_port": 443,
-      "uuid": "ea800f9e-ca6c-11ef-8e74-f23c913c8d2b",
+      "password": "ae5338ae-9a70-58c9-3d47-7d54a5675715",
       "tls": {
         "enabled": true,
-        "server_name": "download.windowsupdate.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
-          "short_id": ""
-        }
+        "server_name": "bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com",
+        "insecure": false
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - NJ",
-      "server": "e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "40639730-e027-11ea-87ad-f23c913c8d2b",
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - NJ",
+      "server": "ench-snet-app.w-ctrip.cn",
+      "server_port": 45503,
+      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
       "tls": {
         "enabled": true,
-        "server_name": "e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com",
+        "server_name": "cm.g.doubleclick.net",
         "insecure": true
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - NJ",
-      "server": "112.120.123.140",
-      "server_port": 443,
-      "password": "e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9",
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - NJ",
+      "server": "ench-snet-app.w-ctrip.cn",
+      "server_port": 45502,
+      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
       "tls": {
         "enabled": true,
-        "server_name": "525b1a38-tly2o0-tn5bnx-19xg1.nw4.hyhuawei.com",
-        "insecure": false
+        "server_name": "cm.g.doubleclick.net",
+        "insecure": true
       }
     },
     {
@@ -60,20 +64,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - NJ",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - NJ",
+        "🇺🇸 美国 (United States) 01 (移动家宽) - NJ",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - NJ",
         "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - NJ",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - NJ"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - NJ",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - NJ"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - NJ",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - NJ",
+        "🇺🇸 美国 (United States) 01 (移动家宽) - NJ",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - NJ",
         "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - NJ",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - NJ"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - NJ",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

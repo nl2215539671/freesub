@@ -5,38 +5,506 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - NJ
+  server: 138.199.42.68
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 美国 (United States) 02 - NJ
+  server: 156.146.38.167
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 03 - NJ
+  server: 156.146.38.169
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 04 - NJ
+  server: 156.146.38.170
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 05 - NJ
+  server: 216.152.155.54
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.nextjobopportunityandclaimyouridealrole.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 06 - NJ
+  server: 108.61.119.63
+  port: 18580
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: us007.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 07 - NJ
+  server: 156.146.38.168
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 08 - NJ
+  server: 185.215.132.9
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国 (United States) 09 - NJ
+  server: 129.213.91.185
+  port: 35013
+  udp: true
+  type: hysteria2
+  password: 4291c983-c520-46ac-82cc-48f14bef573f
+  sni: 129.213.91.185
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 10 - NJ
+  server: 185.215.132.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国 (United States) 11 - NJ
+  server: 216.9.225.189
+  port: 443
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: Q2YsIzc5YkchSFjsqUZWrQAFtsSpqf7XxYxkG4+Jbsk=:zT1SecPttPY/XPW6NwjK5Wql+/6zbcGSDJK21Jk8uLo=
+- name: 🇺🇸 美国 (United States) 12 - NJ
+  server: 37.19.198.160
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 13 - NJ
+  server: 37.19.198.236
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 14 - NJ
+  server: 37.19.198.243
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 15 - NJ
+  server: 37.19.198.244
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 16 - NJ
+  server: 185.230.230.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国 (United States) 17 - NJ
+  server: promo3.goonars.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 63e1b9462d708b56d5d5a0267cffecdc
+  sni: promo3.goonars.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 18 - NJ
+  server: 15.204.247.206
+  port: 4444
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇺🇸 美国 (United States) 19 - NJ
+  server: 47.253.226.114
+  port: 443
+  udp: true
+  type: vless
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 20 - NJ
+  server: 66.163.114.166
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 21 - NJ
+  server: 66.163.114.126
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.findconnectwithemployersandbuildprofessionalnetwork.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 22 - NJ
+  server: 45.138.100.248
+  port: 10443
+  udp: true
+  type: vless
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+- name: 🇺🇸 美国 (United States) 23 - NJ
+  server: 216.152.155.23
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.nextjobopportunityandclaimyouridealrole.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 24 - NJ
+  server: 66.163.114.114
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 66.163.114.114
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 25 - NJ
+  server: 216.152.155.131
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.nextjobopportunityandclaimyouridealrole.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 26 - NJ
+  server: 216.152.156.212
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 27 - NJ
+  server: 95.215.201.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国 (United States) 28 - NJ
+  server: 66.163.114.45
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.findconnectwithemployersandbuildprofessionalnetwork.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 29 - NJ
+  server: 66.23.203.21
+  port: 59689
+  udp: true
+  type: trojan
+  password: ae7eb4dwyaz25pxwgq59
+  sni: 66.23.203.21
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 30 - NJ
+  server: 216.152.156.49
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 31 - NJ
+  server: 193.151.163.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国 (United States) 32 - NJ
+  server: 138.197.89.234
+  port: 28960
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: DZRy4Q3QH0jUGfKFl2jDCZ
+- name: 🇺🇸 美国 (United States) 33 - NJ
+  server: 66.163.114.132
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.findconnectwithemployersandbuildprofessionalnetwork.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 34 - NJ
+  server: 45.86.51.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国 (United States) 35 - NJ
+  server: 15.204.247.175
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇺🇸 美国 (United States) 36 - NJ
+  server: 67.220.95.3
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 37 - NJ
+  server: 45.138.100.248
+  port: 14430
+  udp: true
+  type: vless
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.138.100.248
+- name: 🇺🇸 美国 (United States) 38 - NJ
+  server: 216.152.155.59
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.nextjobopportunityandclaimyouridealrole.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 39 - NJ
+  server: 45.144.112.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ''
+- name: 🇺🇸 美国 (United States) 40 - NJ
+  server: 66.163.114.106
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.findconnectwithemployersandbuildprofessionalnetwork.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 41 - NJ
+  server: 69.48.201.136
+  port: 30016
+  udp: true
+  type: vless
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: zoom.us
+- name: 🇺🇸 美国 (United States) 42 - NJ
+  server: 169.40.42.235
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 43 - NJ
+  server: 170.101.101.211
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.explorecreativejobsandenhanceyourcareerportfolio.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 44 - NJ
+  server: 173.244.56.9
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 45 - NJ
+  server: 195.123.235.183
+  port: 443
+  udp: true
+  type: vless
+  uuid: c14ec728-3eca-4750-87fc-fd1e6aeb81d5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: H3R3BUAl7thrIZsznTbb-eRREIjQOH2f3WO0oTN7OGY
+    short-id: a0e2a6074c6456b0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 46 - NJ
+  server: 170.101.101.67
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.explorecreativejobsandenhanceyourcareerportfolio.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 47 - NJ
+  server: 167.17.69.171
+  port: 443
+  udp: true
+  type: vless
+  uuid: 00144519-7e0d-476b-8d28-435576af9262
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
+    short-id: 0990d22f
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 48 - NJ
+  server: 147.182.212.232
+  port: 56565
+  udp: true
+  type: vless
+  uuid: 7b188eea-b08f-42c2-bac7-d3b0e74218b8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Td03Ae-cuYLq4xg7MSps58c_yRUcbbwtZLXm0ywabjY
+  servername: www.paypal.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 49 - NJ
+  server: 216.152.156.42
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 50 - NJ
+  server: 169.40.42.225
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 51 - NJ
+  server: 195.123.235.177
+  port: 443
+  udp: true
+  type: vless
+  uuid: 729dd5f2-f5ff-4070-8c10-863eceded0b1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 52 - NJ
+  server: 159.89.87.21
+  port: 28190
+  udp: true
+  type: vless
+  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 53 - NJ
+  server: 67.220.73.204
+  port: 18662
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 54 - NJ
+  server: 69.164.240.85
+  port: 50875
+  udp: true
+  type: trojan
+  password: nwilryafgkyvuxauc8pz
+  sni: 69.164.240.85
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 55 - NJ
+  server: 66.163.122.25
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.searchnationwidecareerchangehelperandguidancetoday.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 56 - NJ
+  server: 169.40.42.229
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 57 - NJ
+  server: 173.244.56.6
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 58 - NJ
   server: 163.192.14.135
   port: 50160
   udp: true
   type: hysteria2
   password: 099830134df5ac3a04a4b21d39b8c395
-  sni: google.com
+  sni: 163.192.14.135
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 02 - NJ
-  server: hy2.123266.xyz
-  port: 33333
-  udp: true
-  type: hysteria2
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  sni: hy2.123266.xyz
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 03 - NJ
-  server: 167.88.61.85
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.browseseniorrolesandenhanceyourcareertoday.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 04 - NJ
-  server: 167.88.61.175
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 05 - NJ
+- name: 🇺🇸 美国 (United States) 59 - NJ
   server: 47.251.25.74
   port: 443
   udp: true
@@ -48,7 +516,26 @@ proxies:
     public-key: H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8
   servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 06 - NJ
+- name: 🇺🇸 美国 (United States) 60 - NJ
+  server: 107.173.237.146
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
+  tls: true
+  reality-opts:
+    public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
+    short-id: df8611c07d
+  servername: updates.cdn-apple.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 61 - NJ
+  server: 193.151.160.9
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国 (United States) 62 - NJ
   server: 43.173.78.139
   port: 8443
   udp: true
@@ -61,77 +548,58 @@ proxies:
     short-id: ed7720aa510154f5
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 07 - NJ
-  server: 144.202.126.147
-  port: 443
+- name: 🇺🇸 美国 (United States) 63 - NJ
+  server: 107.151.182.197
+  port: 8080
   udp: true
-  type: vless
-  uuid: 45d51389-0c38-4843-8ae8-cffb94e97a72
-  tls: true
-  reality-opts:
-    public-key: jO7THaLxz0Oz3kePAJcuwcKNTlsWoEWGh18zzRmiXgo
-    short-id: 77c4230d
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 美国 (United States) 08 - NJ
-  server: 45.32.69.110
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1572b9c5-d741-46eb-b4a2-a5d23958dfbe
-  tls: true
-  reality-opts:
-    public-key: 6l-Yq_zkVrnExw8AVv85VwoYnfNc8-dRSpoj_AA-fxY
-    short-id: c5cde18f
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 美国 (United States) 09 - NJ
-  server: 84.17.41.2
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 10 - NJ
-  server: 167.88.61.20
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 美国 (United States) 64 - NJ
+  server: 216.152.156.65
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.browseseniorrolesandenhanceyourcareertoday.com
+  sni: learn.healthcarejobshubenhancemedicalprofessionalskillstoday.com
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 11 - NJ
-  server: 95.215.201.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 美国 (United States) 12 - NJ
-  server: 195.123.240.65
+- name: 🇺🇸 美国 (United States) 65 - NJ
+  server: 2.24.124.64
   port: 443
   udp: true
   type: vless
-  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
+  uuid: 719b9354-45e2-4718-8709-d965b64554db
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
-    short-id: 19296c9f1bf9c7b1
+    public-key: zpXR6Y36C8qUCIVk2p_j8C9KGeBk5xisLw66j3WFOls
+    short-id: 9f1fc5a631ef3126
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇺🇸 美国 (United States) 13 - NJ
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 66 - NJ
+  server: 107.151.182.253
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 美国 (United States) 67 - NJ
+  server: 66.163.114.245
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: findconnectwithemployersandbuildprofessionalnetwork.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 68 - NJ
+  server: 66.163.112.121
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 66.163.112.121
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 69 - NJ
   server: 38.102.234.153
   port: 18603
   udp: true
@@ -139,14 +607,7 @@ proxies:
   password: lk59gDrTm2
   sni: www.777061.xyz
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 14 - NJ
-  server: 107.155.57.11
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 15 - NJ
+- name: 🇺🇸 美国 (United States) 70 - NJ
   server: 45.76.172.197
   port: 443
   udp: true
@@ -161,27 +622,79 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-- name: 🇺🇸 美国 (United States) 16 - NJ
-  server: 107.151.182.253
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 17 - NJ
-  server: 15.204.97.195
-  port: 23576
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 美国 (United States) 71 - NJ
+  server: 144.202.126.147
+  port: 443
   udp: true
   type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  uuid: 45d51389-0c38-4843-8ae8-cffb94e97a72
+  tls: true
+  reality-opts:
+    public-key: jO7THaLxz0Oz3kePAJcuwcKNTlsWoEWGh18zzRmiXgo
+    short-id: 77c4230d
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 🇺🇸 美国 (United States) 72 - NJ
+  server: 43.153.121.144
+  port: 443
+  udp: true
+  type: vless
+  uuid: df63ee5d-9530-464d-bb1c-ca1fa00e8b98
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
+    public-key: -6_eN_0VKwqVaYN_jU9WdQ9yEpiLGvJQffhGThYLqGQ
+    short-id: c2f1c482d8d339a5
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 18 - NJ
+- name: 🇺🇸 美国 (United States) 73 - NJ
+  server: 84.17.41.2
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 74 - NJ
+  server: 67.209.184.133
+  port: 443
+  udp: true
+  type: vless
+  uuid: 96ebc166-565c-474f-9712-7990b55c368a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Tp015Ga5LodBwKs4z7Wz4hTvqeh8-4q1EQPZqvZfWR0
+    short-id: ad09494d431b2b92
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 75 - NJ
+  server: 169.40.42.202
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 76 - NJ
+  server: hy2.123266.xyz
+  port: 33333
+  udp: true
+  type: hysteria2
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  sni: hy2.123266.xyz
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 77 - NJ
   server: 45.63.53.81
   port: 443
   udp: true
@@ -198,14 +711,15 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇺🇸 美国 (United States) 19 - NJ
-  server: 79.110.54.250
-  port: 8080
+- name: 🇺🇸 美国 (United States) 78 - NJ
+  server: a436bbe7-tmm5c0-tug19l-1go3q.los.hyhuawei.com
+  port: 443
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 20 - NJ
+  type: hysteria2
+  password: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
+  sni: a436bbe7-tmm5c0-tug19l-1go3q.los.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 79 - NJ
   server: 167.88.61.198
   port: 443
   udp: true
@@ -213,52 +727,23 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: cdn.browseseniorrolesandenhanceyourcareertoday.com
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 21 - NJ
-  server: 107.155.57.51
-  port: 8080
+- name: 🇺🇸 美国 (United States) 80 - NJ
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 22 - NJ
-  server: 15.204.97.219
-  port: 23576
+  type: trojan
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 81 - NJ
+  server: 38.91.107.49
+  port: 18000
   udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 23 - NJ
-  server: 15.204.97.206
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 24 - NJ
-  server: 15.204.97.209
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-  servername: fuck.rkn
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 25 - NJ
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 82 - NJ
   server: 129.146.77.248
   port: 39495
   udp: true
@@ -269,21 +754,51 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇺🇸 美国 (United States) 26 - NJ
-  server: 67.209.184.133
+- name: 🇺🇸 美国 (United States) 83 - NJ
+  server: 15.204.246.132
+  port: 7307
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇺🇸 美国 (United States) 84 - NJ
+  server: 66.163.112.171
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.unlockyourfuturefindyourperfectcareer.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 85 - NJ
+  server: 195.123.240.65
   port: 443
   udp: true
   type: vless
-  uuid: 96ebc166-565c-474f-9712-7990b55c368a
+  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Tp015Ga5LodBwKs4z7Wz4hTvqeh8-4q1EQPZqvZfWR0
-    short-id: ad09494d431b2b92
-  servername: www.bing.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 27 - NJ
-  server: 15.204.97.216
+    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
+    short-id: 19296c9f1bf9c7b1
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 86 - NJ
+  server: 167.88.61.52
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 87 - NJ
+  server: 79.110.54.250
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 美国 (United States) 88 - NJ
+  server: 15.204.97.219
   port: 23576
   udp: true
   type: vless
@@ -292,32 +807,44 @@ proxies:
   tls: true
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 28 - NJ
-  server: 104.18.0.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
-  tls: true
-  servername: all.speedtest03.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: all.speedtest03.ccwu.cc
-- name: 🇺🇸 美国 (United States) 29 - NJ
-  server: 173.244.56.9
-  port: 443
+- name: 🇺🇸 美国 (United States) 89 - NJ
+  server: 193.151.160.18
+  port: 19999
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 30 - NJ
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国 (United States) 90 - NJ
+  server: fast.145779.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
+  tls: true
+  servername: fast.145779.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-tesla
+- name: 🇺🇸 美国 (United States) 91 - NJ
+  server: 169.197.142.22
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 92 - NJ
+  server: 216.106.186.66
+  port: 443
+  udp: true
+  type: trojan
+  password: 242a3d8eee5e4ed1a6bfa4141d549a25
+  sni: www.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 93 - NJ
   server: 15.204.97.198
   port: 23576
   udp: true
@@ -329,27 +856,49 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 31 - NJ
-  server: 173.244.56.6
+- name: 🇺🇸 美国 (United States) 94 - NJ
+  server: 169.40.42.89
   port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 32 - NJ
-  server: 15.204.97.197
-  port: 23576
-  udp: true
   type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 33 - NJ
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 95 - NJ
+  server: 66.163.112.147
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.unlockyourfuturefindyourperfectcareer.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 96 - NJ
+  server: 169.40.42.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 97 - NJ
+  server: 170.101.101.131
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.explorecreativejobsandenhanceyourcareerportfolio.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 98 - NJ
   server: 15.204.97.214
   port: 23576
   udp: true
@@ -362,64 +911,40 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 34 - NJ
-  server: 107.151.182.197
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 35 - NJ
-  server: 185.168.208.190
-  port: 47443
+- name: 🇺🇸 美国 (United States) 99 - NJ
+  server: 154.29.159.211
+  port: 26763
   udp: true
   type: vless
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+  uuid: d3f0d021-6a98-43c1-ba26-b75bd0d145f0
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: hz7rzdHvTAVwfy48pa6313yBF-sV7V0svvPVnl95bgY
-    short-id: ae97246a8f799854
-  servername: us-1.waspguard.ru
+    public-key: 9tgCHwsQFN0j6FaMsAeJN8TSD2qQFnX6JdTaEdp8TRU
+    short-id: b72b5eed
+  servername: apple.com
   client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 36 - NJ
-  server: www.speedtest.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: ec23f217-23a1-4f62-b98d-ba56070de89c
-  tls: true
-  servername: wallweb4.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: wallweb4.pages.dev
-- name: 🇺🇸 美国 (United States) 37 - NJ
-  server: 23.251.121.242
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 38 - NJ
-  server: 216.106.186.32
-  port: 443
-  udp: true
-  type: trojan
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 39 - NJ
-  server: 66.163.112.76
+- name: 🇺🇸 美国 (United States) 100 - NJ
+  server: 66.163.122.113
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 66.163.112.76
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 40 - NJ
+  sni: api.searchnationwidecareerchangehelperandguidancetoday.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 101 - NJ
+  server: 15.204.97.209
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+  servername: fuck.rkn
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 102 - NJ
   server: www.777061.xyz
   port: 18603
   udp: true
@@ -427,28 +952,193 @@ proxies:
   password: lk59gDrTm2
   sni: www.777061.xyz
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 41 - NJ
-  server: 156.146.38.170
+- name: 🇺🇸 美国 (United States) 103 - NJ
+  server: 167.88.61.20
   port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 42 - NJ
-  server: 156.146.38.167
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 104 - NJ
+  server: 186.241.105.213
   port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 43 - NJ
-  server: 156.146.38.168
+  type: trojan
+  password: va3E77I9fZCnCVcGKkxBCfz5
+  sni: vpn.liumr.top
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 105 - NJ
+  server: ww13.levikogjgfdd.ir
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 106 - NJ
+  server: 15.204.97.197
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 107 - NJ
+  server: 47.88.79.34
   port: 443
   udp: true
+  type: vmess
+  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: rib9jxayoqjgn2kw.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: rib9jxayoqjgn2kw.v.3dns.vip
+- name: 🇺🇸 美国 (United States) 108 - NJ
+  server: 23.251.121.242
+  port: 8080
+  udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 44 - NJ
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 美国 (United States) 109 - NJ
+  server: 169.197.140.224
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 110 - NJ
+  server: 79.110.53.169
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 美国 (United States) 111 - NJ
+  server: 66.163.112.31
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: unlockyourfuturefindyourperfectcareer.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 112 - NJ
+  server: 15.204.97.216
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 113 - NJ
+  server: 107.155.57.11
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 美国 (United States) 114 - NJ
+  server: 15.204.97.195
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 115 - NJ
+  server: 38.107.236.166
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 48572af1-d091-457b-a86e-4a457e99927f
+  tls: true
+  servername: 3h-unitedstates3.09vpn.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 3h-unitedstates3.09vpn.com
+- name: 🇺🇸 美国 (United States) 116 - NJ
+  server: 169.197.140.171
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 117 - NJ
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: daed3ca3-6b04-44e3-bd55-a9995e88d70b
+  tls: true
+  servername: minimize-evenness.cdn-content.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+- name: 🇺🇸 美国 (United States) 118 - NJ
+  server: 64.32.13.230
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  sni: ddcdcde6-tm96o0-0-1imi4.los.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 119 - NJ
+  server: 138.199.43.159
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 美国 (United States) 120 - NJ
+  server: 169.40.42.231
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 121 - NJ
   server: 216.106.186.82
   port: 443
   udp: true
@@ -456,126 +1146,255 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: courses.findlocaljobnetworkandbuildcommunityconnections.com
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 45 - NJ
-  server: 66.163.112.31
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: unlockyourfuturefindyourperfectcareer.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 46 - NJ
-  server: 79.110.53.169
+- name: 🇺🇸 美国 (United States) 122 - NJ
+  server: 107.155.57.51
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 47 - NJ
+- name: 🇺🇸 美国 (United States) 123 - NJ
+  server: 5.34.178.120
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9063f9fb-e88a-4ee0-b4a4-a92ca7316a9f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EVhq2BxKuw2Cody1DmF_HPvUYKwzdXbHP47blUv-eRM
+    short-id: 55ab5559e3a6d10a
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 124 - NJ
+  server: 167.148.201.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: ee78c844-83b6-4508-b1f9-b3f00c8e0556
+  sni: us.mi11o4ka.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 125 - NJ
+  server: 169.40.42.90
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 126 - NJ
+  server: 169.197.140.218
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 127 - NJ
+  server: grimness-backlogs.cdn-content.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 68013563-ae18-40bc-9d6b-d9ef0fd5929a
+  tls: true
+  servername: grimness-backlogs.cdn-content.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: grimness-backlogs.cdn-content.com
+- name: 🇺🇸 美国 (United States) 128 - NJ
+  server: 23.191.200.206
+  port: 443
+  udp: true
+  type: vless
+  uuid: fa92c1a9-d3fe-4318-b1a5-6276c4429a68
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI
+  servername: dl.google.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 129 - NJ
+  server: 208.84.100.209
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇺🇸 美国 (United States) 130 - NJ
+  server: 169.40.42.163
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 131 - NJ
+  server: 195.211.98.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
+    short-id: 9c56fddf237e8eaf
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 132 - NJ
+  server: us3.shtil.io
+  port: 443
+  udp: true
+  type: vless
+  uuid: 86a83d11-d751-4b60-aa4e-1dca5cff7028
+  tls: true
+  servername: us3.shtil.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 133 - NJ
+  server: 179.255.103.55
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 92bf29cc-ee08-4c97-bf0b-b4dff41e5bd8
+  sni: n02.jinggai.online
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 134 - NJ
+  server: 15.204.233.41
+  port: 8882
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇺🇸 美国 (United States) 135 - NJ
+  server: 23.95.222.127
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 352ff568-f971-4613-bf48-92997a5d44ed
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ribQDOlZ69PzvZ1EDF0EcmMvbq_T5RQrVRBSGUU2riU
+    short-id: 35cd899f8de04801
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 136 - NJ
+  server: xray2-direct-mci1-fs-ce.freesocks.work
+  port: 443
+  udp: true
+  type: vless
+  uuid: 982ce053-c61c-4daa-97c1-1f45810dc1ec
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI
+  servername: dl.google.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 137 - NJ
   server: 66.163.112.142
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: cdn.unlockyourfuturefindyourperfectcareer.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 48 - NJ
-  server: 216.106.186.46
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 49 - NJ
-  server: 66.163.112.147
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.unlockyourfuturefindyourperfectcareer.com
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 50 - NJ
-  server: 138.199.43.159
-  port: 8080
+- name: 🇺🇸 美国 (United States) 138 - NJ
+  server: 185.14.30.98
+  port: 8443
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 51 - NJ
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  type: vless
+  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Q0dPyF2hFWgxL7hxntJWJammcb6zcRCyA-NOiOFrsAo
+    short-id: 1433a38abea1191c
+  servername: twitch.tv
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 139 - NJ
+  server: 195.123.221.36
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9c60369d-e5f9-4cec-9e63-1560e88e119a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dIv6pPS-x6IzbiPyHX8nNdRrwI2yZl4y3YCeRWy9UgE
+    short-id: 3e67326f98ddb407
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 140 - NJ
+  server: starlink-ft.251313.xyz
+  port: 443
+  udp: true
+  type: hysteria2
+  password: https://xship.best
+  sni: xship.top
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 141 - NJ
+  server: 216.106.186.33
   port: 443
   udp: true
   type: trojan
   password: f0eb8c92ce8946aaba856569cff1a16b
   sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 52 - NJ
-  server: 66.163.112.13
+- name: 🇺🇸 美国 (United States) 142 - NJ
+  server: vpn-us-004.fastervpn.world
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 66.163.112.13
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-004.fastervpn.world
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 53 - NJ
-  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
+- name: 🇺🇸 美国 (United States) 143 - NJ
+  server: 13.143.189.106
+  port: 4444
   udp: true
-  type: trojan
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  type: hysteria2
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: pl2.nexfile.net
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 54 - NJ
-  server: 66.163.114.126
-  port: 443
+- name: 🇺🇸 美国 (United States) 144 - NJ
+  server: ench-snet-app.w-ctrip.cn
+  port: 24133
   udp: true
   type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.findconnectwithemployersandbuildprofessionalnetwork.com
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 55 - NJ
-  server: 66.163.114.106
+- name: 🇺🇸 美国 (United States) 145 - NJ
+  server: 141.193.154.234
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.findconnectwithemployersandbuildprofessionalnetwork.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 56 - NJ
-  server: 169.197.142.22
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 57 - NJ
-  server: 66.163.114.166
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 58 - NJ
-  server: 107.167.6.111
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 332774e5-9371-48bb-b518-1fe56c7268da
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 80fdddb8-3eb8-41ad-9916-fbb42c442e6e
   tls: true
-  servername: cg1c02.waimaojd.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /api/v1/graphql
-    headers:
-      Host: cg1c02.waimaojd.com
-- name: 🇺🇸 美国 (United States) 59 - NJ
-  server: www.shopify.com
+  reality-opts:
+    public-key: dN2EhTLZsQ1RsO4rCdoIBIi7mFtmqsC2iekPft3MPnY
+    short-id: '1835'
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 146 - NJ
+  server: guanwang.awsno.com
   port: 443
   udp: true
   type: vmess
@@ -590,700 +1409,93 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 60 - NJ
-  server: 66.163.114.114
+- name: 🇺🇸 美国 (United States) 147 - NJ
+  server: 162.19.254.104
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.findconnectwithemployersandbuildprofessionalnetwork.com
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  tls: true
+  servername: t5pmr.mail-node.gfw.kdns.fr
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 61 - NJ
-  server: 185.215.132.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 美国 (United States) 62 - NJ
-  server: 66.23.203.21
-  port: 59689
-  udp: true
-  type: trojan
-  password: ae7eb4dwyaz25pxwgq59
-  sni: 66.23.203.21
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 63 - NJ
-  server: 185.215.132.9
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 美国 (United States) 64 - NJ
-  server: 167.148.201.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: ee78c844-83b6-4508-b1f9-b3f00c8e0556
-  sni: us.mi11o4ka.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 65 - NJ
-  server: 37.19.198.236
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 66 - NJ
-  server: 193.151.160.9
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 美国 (United States) 67 - NJ
-  server: 37.19.198.244
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 68 - NJ
-  server: 67.220.85.46
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 69 - NJ
-  server: 37.19.198.160
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 70 - NJ
-  server: 45.138.100.248
-  port: 10443
-  udp: true
-  type: vless
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-- name: 🇺🇸 美国 (United States) 71 - NJ
-  server: 138.199.42.68
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 72 - NJ
-  server: 193.151.160.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 美国 (United States) 73 - NJ
-  server: 37.19.198.243
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 74 - NJ
-  server: 193.151.163.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 美国 (United States) 75 - NJ
-  server: 45.86.51.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 美国 (United States) 76 - NJ
-  server: 51.81.203.63
-  port: 443
-  udp: true
-  type: vless
-  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
-    short-id: 4477382ff6d3d41c
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 77 - NJ
-  server: 216.152.155.158
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.nextjobopportunityandclaimyouridealrole.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 78 - NJ
-  server: 216.152.155.54
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.nextjobopportunityandclaimyouridealrole.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 79 - NJ
-  server: 38.91.107.49
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 80 - NJ
-  server: 185.230.230.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 美国 (United States) 81 - NJ
-  server: 216.152.156.81
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 216.152.156.81
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 82 - NJ
-  server: 216.152.156.42
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.healthcarejobshubenhancemedicalprofessionalskillstoday.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 83 - NJ
-  server: 69.48.201.136
-  port: 30016
-  udp: true
-  type: vless
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: uspanel.unixzone.us
-- name: 🇺🇸 美国 (United States) 84 - NJ
-  server: 129.213.91.185
-  port: 35013
-  udp: true
-  type: hysteria2
-  password: 4291c983-c520-46ac-82cc-48f14bef573f
-  sni: 129.213.91.185
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 85 - NJ
-  server: 15.204.246.132
-  port: 7307
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-- name: 🇺🇸 美国 (United States) 86 - NJ
-  server: 38.107.232.36
-  port: 80
-  udp: true
-  type: vless
-  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇺🇸 美国 (United States) 87 - NJ
-  server: 195.123.235.177
-  port: 443
-  udp: true
-  type: vless
-  uuid: 729dd5f2-f5ff-4070-8c10-863eceded0b1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI
-    short-id: c85d029f5e8eb393
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 88 - NJ
-  server: 45.138.100.248
-  port: 14430
-  udp: true
-  type: vless
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.138.100.248
-- name: 🇺🇸 美国 (United States) 89 - NJ
-  server: 169.197.140.218
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 90 - NJ
-  server: 170.101.101.19
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.explorecreativejobsandenhanceyourcareerportfolio.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 91 - NJ
-  server: 169.40.42.235
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 92 - NJ
-  server: 159.89.87.21
-  port: 28190
-  udp: true
-  type: vless
-  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 93 - NJ
-  server: 169.40.42.35
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 94 - NJ
-  server: 169.40.42.168
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 95 - NJ
-  server: 169.197.140.171
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 96 - NJ
-  server: 170.101.101.131
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.explorecreativejobsandenhanceyourcareerportfolio.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 97 - NJ
-  server: 130.94.19.95
-  port: 57277
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: us001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 98 - NJ
-  server: 147.182.212.232
-  port: 56565
-  udp: true
-  type: vless
-  uuid: 7b188eea-b08f-42c2-bac7-d3b0e74218b8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Td03Ae-cuYLq4xg7MSps58c_yRUcbbwtZLXm0ywabjY
-  servername: www.paypal.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 99 - NJ
-  server: 69.164.240.85
-  port: 50875
-  udp: true
-  type: trojan
-  password: nwilryafgkyvuxauc8pz
-  sni: 69.164.240.85
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 100 - NJ
-  server: 169.197.140.245
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 101 - NJ
-  server: 169.40.42.163
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 102 - NJ
-  server: 169.197.140.214
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 103 - NJ
-  server: 195.123.235.183
-  port: 443
-  udp: true
-  type: vless
-  uuid: c14ec728-3eca-4750-87fc-fd1e6aeb81d5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: H3R3BUAl7thrIZsznTbb-eRREIjQOH2f3WO0oTN7OGY
-    short-id: a0e2a6074c6456b0
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 104 - NJ
-  server: starlink-ft.251313.xyz
-  port: 443
-  udp: true
-  type: hysteria2
-  password: https://xship.top
-  sni: xship.top
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 105 - NJ
-  server: 5.34.178.120
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9063f9fb-e88a-4ee0-b4a4-a92ca7316a9f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EVhq2BxKuw2Cody1DmF_HPvUYKwzdXbHP47blUv-eRM
-    short-id: 55ab5559e3a6d10a
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 106 - NJ
-  server: 216.9.225.189
-  port: 443
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: Q2YsIzc5YkchSFjsqUZWrQAFtsSpqf7XxYxkG4+Jbsk=:zT1SecPttPY/XPW6NwjK5Wql+/6zbcGSDJK21Jk8uLo=
-- name: 🇺🇸 美国 (United States) 107 - NJ
-  server: 169.40.42.224
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 108 - NJ
-  server: 2.24.124.64
-  port: 443
-  udp: true
-  type: vless
-  uuid: 719b9354-45e2-4718-8709-d965b64554db
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zpXR6Y36C8qUCIVk2p_j8C9KGeBk5xisLw66j3WFOls
-    short-id: 9f1fc5a631ef3126
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 109 - NJ
-  server: fast.145779.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
-  tls: true
-  servername: fast.145779.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-tesla
-- name: 🇺🇸 美国 (United States) 110 - NJ
-  server: 23.191.200.207
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2db3c7fd-e34a-4f5e-9e63-2aa55f6f9f99
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI
-  servername: dl.google.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 111 - NJ
-  server: xray1-direct-mci1-fs-ce.freesocks.work
-  port: 443
-  udp: true
-  type: vless
-  uuid: ad7014cf-53ad-4143-9141-05027c8a2f9f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI
-  servername: dl.google.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 112 - NJ
-  server: 169.40.42.74
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 113 - NJ
-  server: 208.84.100.209
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 美国 (United States) 114 - NJ
-  server: 169.40.42.90
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 115 - NJ
-  server: 167.17.69.171
-  port: 443
-  udp: true
-  type: vless
-  uuid: 00144519-7e0d-476b-8d28-435576af9262
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
-    short-id: 0990d22f
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 116 - NJ
-  server: 216.152.155.23
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.nextjobopportunityandclaimyouridealrole.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 117 - NJ
-  server: 208.84.100.209
-  port: 2112
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 118 - NJ
-  server: 169.40.42.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
   client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 119 - NJ
-  server: 169.40.42.231
+  network: ws
+  ws-opts:
+    path: /danfeng
+    headers:
+      Host: t5pmr.mail-node.gfw.kdns.fr
+- name: 🇺🇸 美国 (United States) 148 - NJ
+  server: 13.143.180.142
   port: 443
   udp: true
   type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 2614a96d-e39f-02f0-a9c7-467a178c2c0a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 120 - NJ
-  server: 169.40.42.225
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: sw.lenvex.cc
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 149 - NJ
+  server: 13.143.180.141
   port: 443
   udp: true
   type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 2614a96d-e39f-02f0-a9c7-467a178c2c0a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 121 - NJ
-  server: 169.40.42.104
-  port: 443
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: sw.lenvex.cc
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 150 - NJ
+  server: 46.29.255.123
+  port: 59539
   udp: true
   type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 122 - NJ
-  server: 15.204.233.41
-  port: 8882
+    public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
+  servername: cloudflare-dns.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 151 - NJ
+  server: 15.204.246.107
+  port: 8888
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: 🇺🇸 美国 (United States) 123 - NJ
-  server: 169.40.42.202
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 124 - NJ
-  server: 154.201.73.209
-  port: 21899
-  udp: true
-  type: vless
-  uuid: fb69a6b9-980c-48c2-a94f-5f95868a2d2a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: kvLUYW6fwHXutu8Z4On6mi61kjslCyCc8ErFffUM1D0
-    short-id: dedce016e3671418
-  servername: yahoo.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 125 - NJ
-  server: 43.130.35.53
-  port: 10087
-  udp: true
-  type: vmess
-  uuid: 8e93b009-f1af-448a-b8ef-b110849a35f0
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 126 - NJ
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇸 美国 (United States) 152 - NJ
   server: 66.94.121.46
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: 66.94.121.46
+  sni: vk.com
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 127 - NJ
-  server: rib9jxayoqjgn2kw.v.3dns.vip
-  port: 443
+- name: 🇺🇸 美国 (United States) 153 - NJ
+  server: 144.31.109.240
+  port: 4444
   udp: true
-  type: vmess
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: rib9jxayoqjgn2kw.v.3dns.vip
+  type: hysteria2
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: fl3.nexfile.net
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-- name: 🇺🇸 美国 (United States) 128 - NJ
-  server: 141.193.154.234
+- name: 🇺🇸 美国 (United States) 154 - NJ
+  server: 66.154.101.36
   port: 443
   udp: true
   type: vless
-  uuid: 80fdddb8-3eb8-41ad-9916-fbb42c442e6e
+  uuid: c166ca49-4af0-416d-8411-2100f7bde9fe
   tls: true
   reality-opts:
-    public-key: dN2EhTLZsQ1RsO4rCdoIBIi7mFtmqsC2iekPft3MPnY
-    short-id: '1835'
-  servername: cloudflare.com
+    public-key: t_aj99mkcVXDY_7xI9RhWyEY3khupiGiDsGKEJ7EajM
+    short-id: 5590a9bae52e0586
+  servername: www.tesla.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 129 - NJ
-  server: 169.40.42.229
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 130 - NJ
-  server: 66.163.122.7
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.searchnationwidecareerchangehelperandguidancetoday.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 131 - NJ
+- name: 🇺🇸 美国 (United States) 155 - NJ
   server: 154.26.188.52
   port: 443
   udp: true
@@ -1296,58 +1508,146 @@ proxies:
     short-id: b46b142b
   servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 132 - NJ
-  server: 38.107.236.166
-  port: 8443
+- name: 🇺🇸 美国 (United States) 156 - NJ
+  server: 24.233.8.109
+  port: 443
   udp: true
-  type: vless
-  uuid: 48572af1-d091-457b-a86e-4a457e99927f
-  tls: true
-  servername: 3h-unitedstates3.09vpn.com
+  type: hysteria2
+  password: 8294f130408299df8cab08c80bf6f819
+  sni: www.bing.com
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 3h-unitedstates3.09vpn.com
-- name: 🇺🇸 美国 (United States) 133 - NJ
-  server: 46.29.255.123
-  port: 59539
-  udp: true
-  type: vless
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
-  servername: cloudflare-dns.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 134 - NJ
-  server: finlandlanzarotte.live
+  obfs: salamander
+  obfs-password: c8827ab99e316c5bd414e21afa915ddf
+- name: 🇺🇸 美国 (United States) 157 - NJ
+  server: 169.40.42.104
   port: 443
   udp: true
   type: vless
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
-  servername: finlandlanzarotte.live
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 135 - NJ
-  server: 185.243.99.100
-  port: 1222
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 158 - NJ
+  server: ench-snet-app.w-ctrip.cn
+  port: 38994
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 159 - NJ
+  server: ench-snet-app.w-ctrip.cn
+  port: 35929
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 160 - NJ
+  server: 208.84.100.209
+  port: 2112
   udp: true
   type: vless
   uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   tls: true
   reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
+    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
+    short-id: 125ba3
   servername: play.google.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 136 - NJ
-  server: chatgpt.com
+- name: 🇺🇸 美国 (United States) 161 - NJ
+  server: 169.40.42.224
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 162 - NJ
+  server: 161.114.14.46
+  port: 21899
+  udp: true
+  type: vless
+  uuid: fb69a6b9-980c-48c2-a94f-5f95868a2d2a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kvLUYW6fwHXutu8Z4On6mi61kjslCyCc8ErFffUM1D0
+    short-id: dedce016e3671418
+  servername: yahoo.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 163 - NJ
+  server: ench-snet-app.w-ctrip.cn
+  port: 26429
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 164 - NJ
+  server: 77.91.68.70
+  port: 55983
+  udp: true
+  type: vless
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  tls: true
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+    short-id: 0e
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 165 - NJ
+  server: 67.220.85.46
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 166 - NJ
+  server: 38.110.1.246
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 167 - NJ
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇺🇸 美国 (United States) 168 - NJ
+  server: 162.35.8.62
+  port: 443
+  udp: true
+  type: vless
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  tls: true
+  reality-opts:
+    public-key: uUWYLl2Fdhr74k9o5WacesJjvsCwLiOHccgfR23TIk4
+    short-id: 29b29106d4769e3a
+  servername: 9bc578g.us4.h1clayd.click
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: aa7f1b042f73
+- name: 🇺🇸 美国 (United States) 169 - NJ
+  server: 104.21.91.53
   port: 8443
   udp: true
   type: vmess
@@ -1362,112 +1662,36 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🇺🇸 美国 (United States) 137 - NJ
-  server: 216.152.156.212
-  port: 443
+- name: 🇺🇸 美国 (United States) 170 - NJ
+  server: 129.146.143.80
+  port: 48111
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.healthcarejobshubenhancemedicalprofessionalskillstoday.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 138 - NJ
-  server: 170.101.101.67
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.explorecreativejobsandenhanceyourcareerportfolio.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 139 - NJ
-  server: 50.117.15.225
+  type: vmess
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 171 - NJ
+  server: 169.40.42.35
   port: 443
   udp: true
   type: vless
-  uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY
-    short-id: 91af08b1ce1f
-  servername: www.foxsports.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 140 - NJ
-  server: 15.204.247.175
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇺🇸 美国 (United States) 141 - NJ
-  server: 77.91.68.70
-  port: 55983
-  udp: true
-  type: vless
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
-  tls: true
-  reality-opts:
-    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
-    short-id: 0e
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
   servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 142 - NJ
-  server: us007.zestapp778.com
-  port: 18580
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: us007.zestapp778.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 143 - NJ
-  server: us007.zestapp778.com
-  port: 42314
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: us007.zestapp778.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 144 - NJ
-  server: us007.zestapp778.com
-  port: 42314
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: us007.zestapp778.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 145 - NJ
-  server: 67.220.95.3
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 146 - NJ
-  server: 216.152.155.131
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.nextjobopportunityandclaimyouridealrole.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 147 - NJ
-  server: 38.110.1.246
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 148 - NJ
-  server: fl3.nexfile.net
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 172 - NJ
+  server: 13.143.188.142
   port: 4444
   udp: true
   type: hysteria2
   password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: fl3.nexfile.net
+  sni: bl1.nexfile.net
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 149 - NJ
+- name: 🇺🇸 美国 (United States) 173 - NJ
   server: 47.251.108.158
   port: 443
   udp: true
@@ -1479,37 +1703,23 @@ proxies:
     public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
     short-id: 896f52ba2cfca903
   servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇺🇸 美国 (United States) 150 - NJ
-  server: 66.163.122.113
-  port: 443
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 174 - NJ
+  server: 162.159.130.234
+  port: 2083
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.searchnationwidecareerchangehelperandguidancetoday.com
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: cdn.sfacg.uk
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 151 - NJ
-  server: 15.204.246.107
-  port: 8888
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇺🇸 美国 (United States) 152 - NJ
-  server: 216.152.156.49
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.healthcarejobshubenhancemedicalprofessionalskillstoday.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 153 - NJ
-  server: 156.146.38.169
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1668,6 +1878,27 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 151 - NJ
   - 🇺🇸 美国 (United States) 152 - NJ
   - 🇺🇸 美国 (United States) 153 - NJ
+  - 🇺🇸 美国 (United States) 154 - NJ
+  - 🇺🇸 美国 (United States) 155 - NJ
+  - 🇺🇸 美国 (United States) 156 - NJ
+  - 🇺🇸 美国 (United States) 157 - NJ
+  - 🇺🇸 美国 (United States) 158 - NJ
+  - 🇺🇸 美国 (United States) 159 - NJ
+  - 🇺🇸 美国 (United States) 160 - NJ
+  - 🇺🇸 美国 (United States) 161 - NJ
+  - 🇺🇸 美国 (United States) 162 - NJ
+  - 🇺🇸 美国 (United States) 163 - NJ
+  - 🇺🇸 美国 (United States) 164 - NJ
+  - 🇺🇸 美国 (United States) 165 - NJ
+  - 🇺🇸 美国 (United States) 166 - NJ
+  - 🇺🇸 美国 (United States) 167 - NJ
+  - 🇺🇸 美国 (United States) 168 - NJ
+  - 🇺🇸 美国 (United States) 169 - NJ
+  - 🇺🇸 美国 (United States) 170 - NJ
+  - 🇺🇸 美国 (United States) 171 - NJ
+  - 🇺🇸 美国 (United States) 172 - NJ
+  - 🇺🇸 美国 (United States) 173 - NJ
+  - 🇺🇸 美国 (United States) 174 - NJ
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1826,5 +2057,26 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 151 - NJ
   - 🇺🇸 美国 (United States) 152 - NJ
   - 🇺🇸 美国 (United States) 153 - NJ
+  - 🇺🇸 美国 (United States) 154 - NJ
+  - 🇺🇸 美国 (United States) 155 - NJ
+  - 🇺🇸 美国 (United States) 156 - NJ
+  - 🇺🇸 美国 (United States) 157 - NJ
+  - 🇺🇸 美国 (United States) 158 - NJ
+  - 🇺🇸 美国 (United States) 159 - NJ
+  - 🇺🇸 美国 (United States) 160 - NJ
+  - 🇺🇸 美国 (United States) 161 - NJ
+  - 🇺🇸 美国 (United States) 162 - NJ
+  - 🇺🇸 美国 (United States) 163 - NJ
+  - 🇺🇸 美国 (United States) 164 - NJ
+  - 🇺🇸 美国 (United States) 165 - NJ
+  - 🇺🇸 美国 (United States) 166 - NJ
+  - 🇺🇸 美国 (United States) 167 - NJ
+  - 🇺🇸 美国 (United States) 168 - NJ
+  - 🇺🇸 美国 (United States) 169 - NJ
+  - 🇺🇸 美国 (United States) 170 - NJ
+  - 🇺🇸 美国 (United States) 171 - NJ
+  - 🇺🇸 美国 (United States) 172 - NJ
+  - 🇺🇸 美国 (United States) 173 - NJ
+  - 🇺🇸 美国 (United States) 174 - NJ
 rules:
 - MATCH,PROXIES
