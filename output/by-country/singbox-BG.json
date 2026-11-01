@@ -7,29 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - NJ",
       "server": "213.183.63.60",
-      "server_port": 9061,
+      "server_port": 9054,
       "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
+      "password": "VcFuyXvND2yQWSFY"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - NJ",
-      "server": "213.183.63.60",
-      "server_port": 9066,
-      "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - NJ",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - NJ",
       "server": "213.183.63.60",
       "server_port": 9098,
       "method": "aes-256-cfb",
@@ -37,7 +21,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - NJ",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - NJ",
       "server": "213.183.63.60",
       "server_port": 9028,
       "method": "aes-256-cfb",
@@ -45,7 +29,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - NJ",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - NJ",
       "server": "213.183.63.60",
       "server_port": 9085,
       "method": "aes-256-cfb",
@@ -53,7 +37,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - NJ",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - NJ",
       "server": "195.123.226.21",
       "server_port": 443,
       "uuid": "6589c320-db68-43cd-a273-b46299bab355",
@@ -73,14 +57,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - NJ",
-      "server": "213.183.63.60",
-      "server_port": 9064,
-      "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -89,10 +65,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 02 - NJ",
         "🇧🇬 保加利亚 (Bulgaria) 03 - NJ",
         "🇧🇬 保加利亚 (Bulgaria) 04 - NJ",
-        "🇧🇬 保加利亚 (Bulgaria) 05 - NJ",
-        "🇧🇬 保加利亚 (Bulgaria) 06 - NJ",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - NJ",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - NJ"
+        "🇧🇬 保加利亚 (Bulgaria) 05 - NJ"
       ]
     },
     {
@@ -103,10 +76,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 02 - NJ",
         "🇧🇬 保加利亚 (Bulgaria) 03 - NJ",
         "🇧🇬 保加利亚 (Bulgaria) 04 - NJ",
-        "🇧🇬 保加利亚 (Bulgaria) 05 - NJ",
-        "🇧🇬 保加利亚 (Bulgaria) 06 - NJ",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - NJ",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - NJ"
+        "🇧🇬 保加利亚 (Bulgaria) 05 - NJ"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
